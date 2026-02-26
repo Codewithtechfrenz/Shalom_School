@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Shalom Matriculation Higher Secondary School</title>
+    <link rel="stylesheet" href="Assets/CSS/Gallery.css">
+ 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+ 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+ 
+</head>
+<body>
+    <!-- Animated Particles Background -->
+    <div id="particles-js"></div>
+ 
+    <!-- Glass Morphism Header -->
+    <header class="glass-header">
+        <nav class="nav-container">
+            <div class="nav-left">
+                <a href="Index.html" class="nav-link">Home</a>
+                <a href="Aboutus.html" class="nav-link">About Us</a>
+                <a href="Academics.html" class="nav-link">Academics</a>
+                <a href="Admission.html" class="nav-link">Admission</a>
+            </div>
+           
+            <div class="logo-container">
+                <img src="./Assets/Images/Logo.png" width='400' height='300' alt="School Logo" class="logo">
+            </div>
+           
+          <div class="nav-right">
+                <a href="Facilities.html" class="nav-link">Facilities</a>
+                <a href="Index.html#blogs" class="nav-link">Blogs</a>
+                <a href="Gallery.html" class="nav-link">Gallery</a>
+                <a href="Index.html#contact" class="nav-link">Contact Us</a>
+            </div>
+           
+ 
+                     <!-- Hamburger -->
+        <button class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+ 
+ 
+            <button class="theme-toggle" id="themeToggle">
+                <i class="fas fa-sun sun-icon"></i>
+                <i class="fas fa-moon moon-icon"></i>
+            </button>
+        </nav>
+    </header>
+ 
+ 
+ 
+    <!-- Mobile Side Menu -->
+
+    <div class="overlay" id="overlay"></div>
+    
+    <div class="mobile-menu" id="mobileMenu">
+        <button class="mobile-close" id="mobileClose">
+            <i class="fas fa-times"></i>
+        </button> 
+        <a href="Index.html">Home</a>
+        <a href="Aboutus.html">About</a>
+        <a href="Academics.html">Academics</a>
+        <a href="Admission.html">Admission</a>
+        <a href="Facilities.html">Facilities</a>
+        <a href="Gallery.html">Gallery</a>
+        <a href="Index.html#contact">Contact</a>
+    </div>
+ 
+ 
+ 
+ 
+    <!-- Hero Section -->
+    <section class="page-hero">
+        <img src="./Assets/Images/gallery.jpg" width='1920' height='400'alt="Gallery">
+        <!--<div class="hero-overlay">
+            <h1>Our Gallery</h1>
+            <p>Moments That Define Our Journey</p>
+        </div>-->
+    </section>
+ 
+    <!-- Marquee Images Section -->
+    <section class="marquee-section">
+        <div class="marquee-container">
+            <div class="marquee-track">
+                <div class="marquee-item">
+                    <img src="./Assets/Images/Gallery/Marquee Images/Building1.jpeg" width='300' height='250'alt="Gallery Image 1">
+                </div>
+                <div class="marquee-item">
+                    <img src="./Assets/Images/Gallery/Marquee Images/Building2.jpeg" width='300' height='250'alt="Gallery Image 2">
+                </div>
+                <div class="marquee-item">
+                    <img src="./Assets/Images/Gallery/Marquee Images/Classroom1.jpeg" width='300' height='250'alt="Gallery Image 3">
+                </div>
+                <div class="marquee-item">
+                    <img src="./Assets/Images/Gallery/Marquee Images/Classroom2.jpeg" width='300' height='250'alt="Gallery Image 4">
+                </div>
+                <div class="marquee-item">
+                    <img src="./Assets/Images/Gallery/Marquee Images/Computerlab1.jpeg" width='300' height='250'alt="Gallery Image 5">
+                </div>
+                <div class="marquee-item">
+                    <img src="./Assets/Images/Gallery/Marquee Images/Computerlab2.jpeg" width='300' height='250'alt="Gallery Image 6">
+                </div>
+                <div class="marquee-item">
+                    <img src="./Assets/Images/Gallery/Marquee Images/Sciencelab1.jpeg" width='300' height='250'alt="Gallery Image 7">
+                </div>
+                <div class="marquee-item">
+                    <img src="./Assets/Images/Gallery/Marquee Images/Sciencelab2.jpeg" width='300' height='250'alt="Gallery Image 8">
+                </div>
+                <div class="marquee-item">
+                    <img src="./Assets/Images/Gallery/Marquee Images/Library1.jpeg" width='300' height='250'alt="Gallery Image 9">
+                </div>
+                <div class="marquee-item">
+                    <img src="./Assets/Images/Gallery/Marquee Images/Library2.jpeg" width='300' height='250'alt="Gallery Image 10">
+                </div>
+            </div>
+        </div>
+    </section>
+ 
+    <!-- Gallery Tabs Section -->
+    <section class="gallery-tabs-section">
+        <div class="container">
+            <h2 class="section-title fade-in">Explore Our Moments</h2>
+           
+            <!-- Tabs -->
+            <div class="gallery-tabs">
+                <button class="tab-btn active" data-tab="infrastructure">
+                    <i class="fas fa-building"></i> Infrastructure
+                </button>
+                <button class="tab-btn" data-tab="transportation">
+                    <i class="fas fa-bus"></i> Transportation
+                </button>
+                <button class="tab-btn" data-tab="annual-day">
+                    <i class="fas fa-star"></i> Annual Day
+                </button>
+                <button class="tab-btn" data-tab="sports">
+                    <i class="fas fa-futbol"></i> Sports
+                </button>
+                <button class="tab-btn" data-tab="activities">
+                    <i class="fas fa-palette"></i> Other Activities
+                </button>
+                <button class="tab-btn" data-tab="dance">
+                    <i class="fas fa-music"></i> Dance
+                </button>
+                <button class="tab-btn" data-tab="events">
+                    <i class="fas fa-calendar-alt"></i> Events
+                </button>
+                <button class="tab-btn" data-tab="Awareness Programme">
+                    <i class="fas fa-bullhorn"></i> Awareness Programme
+                </button>
+                <button class="tab-btn" data-tab="videos">
+                    <i class="fas fa-video"></i> Videos
+                </button>
+            </div>
+ 
+            <!-- Tab Content -->
+            <div class="tab-content-container">
+                <!-- Infrastructure Tab -->
+                <div id="infrastructure" class="tab-content active">
+                    <div class="gallery-grid">
+                        <div class="gallery-card"><img src="./Assets/Images/Gallery/Infrastructure/Mainbuilding1.jpeg" width='400' height='300'alt="Main Building"><div class="overlay"><h3>Main Building</h3></div></div>
+                        <div class="gallery-card"><img src="./Assets/Images/Gallery/Infrastructure/Mainbuilding2.jpeg" width='400' height='300'alt="Main Building"><div class="overlay"><h3>Main Building</h3></div></div>
+                        <div class="gallery-card"><img src= "./Assets/Images/Gallery/Infrastructure/Library.jpeg" width='400' height='300'alt="Library"><div class="overlay"><h3>Library</h3></div></div>
+                        <div class="gallery-card"><img src="./Assets/Images/Gallery/Infrastructure/Computerlab.jpeg" width='400' height='300'alt="Computer Lab"><div class="overlay"><h3>Computer Lab</h3></div></div>
+                        <div class="gallery-card"><img src="./Assets/Images/Gallery/Infrastructure/ScienceLab.jpeg" width='400' height='300'alt="Science Lab"><div class="overlay"><h3>Science Lab</h3></div></div>
+                        <div class="gallery-card"><img src="./Assets/Images/Gallery/Infrastructure/Classroom.jpeg" width='400' height='300'alt="Classroom"><div class="overlay"><h3>Class Room</h3></div></div>
+                    </div>
+                </div>
+ 
+                <!-- Transportation Tab -->
+                <div id="transportation" class="tab-content">
+                    <div class="gallery-grid">
+                        <div class="gallery-card"><img src="./Assets/Images/Gallery/Transportation/Cab.jpg" width='400' height='300'alt="Bus Fleet"><div class="overlay"><h3>Our Bus Fleet</h3></div></div>
+                        <div class="gallery-card"><img src="./Assets/Images/Gallery/Transportation/Cabinterior.jpeg" width='400' height='300'alt="GPS Bus"><div class="overlay"><h3>GPS Tracking</h3></div></div>
+                        <div class="gallery-card"><img src="./Assets/Images/Gallery/Transportation/Cab1.jpg" width='400' height='300'alt="GPS Bus"><div class="overlay"><h3>GPS Tracking</h3></div></div>
+                        <div class="gallery-card"><img src="./Assets/Images/Gallery/Transportation/Cab2.jpg" width='400' height='300'alt="GPS Bus"><div class="overlay"><h3>GPS Tracking</h3></div></div>
+                        </div>
+                        </div>
+ 
+                <!-- Annual Day Tab -->
+                <div id="annual-day" class="tab-content">
+                    <div class="gallery-grid">
+                        <div class="gallery-card"><img src="./Assets/Images/Gallery/Annual/Annual1.JPG" width='400' height='300'alt="Annual Day1"><div class="overlay"><h3>Annual Day 2024</h3></div></div>
+                        <div class="gallery-card"><img src="./Assets/Images/Gallery/Annual/Annual2.JPG" width='400' height='300'alt="Annual Day2"><div class="overlay"><h3>Annual Day 2024</h3></div></div>
+                        <div class="gallery-card"><img src="./Assets/Images/Gallery/Annual/Annual3.JPG" width='400' height='300'alt="Annual Day3"><div class="overlay"><h3>Annual Day 2024</h3></div></div>
+                        <div class="gallery-card"><img src="./Assets/Images/Gallery/Annual/Annual4.JPG" width='400' height='300'alt="Annual Day4"><div class="overlay"><h3>Annual Day 2024</h3></div></div>
+                        <div class="gallery-card"><img src="./Assets/Images/Gallery/Annual/Annual5.JPG" width='400' height='300'alt="Annual Day5"><div class="overlay"><h3>Annual Day 2024</h3></div></div>
+                        <div class="gallery-card"><img src="./Assets/Images/Gallery/Annual/Annual6.JPG" width='400' height='300'alt="Annual Day6"><div class="overlay"><h3>Annual Day 2024</h3></div></div>
+                        <div class="gallery-card"><img src="./Assets/Images/Gallery/Annual/Annual7.JPG" width='400' height='300'alt="Annual Day6"><div class="overlay"><h3>Annual Day 2024</h3></div></div>
+                        <div class="gallery-card"><img src="./Assets/Images/Gallery/Annual/Annual8.JPG" width='400' height='300'alt="Annual Day6"><div class="overlay"><h3>Annual Day 2024</h3></div></div>
+                        <div class="gallery-card"><img src="./Assets/Images/Gallery/Annual/Annual9.JPG" width='400' height='300'alt="Annual Day6"><div class="overlay"><h3>Annual Day 2024</h3></div></div>
+                        <div class="gallery-card"><img src="./Assets/Images/Gallery/Annual/Annual10.JPG" width='400' height='300'alt="Annual Day6"><div class="overlay"><h3>Annual Day 2024</h3></div></div>
+                        <div class="gallery-card"><img src="./Assets/Images/Gallery/Annual/Annual11.JPG" width='400' height='300'alt="Annual Day6"><div class="overlay"><h3>Annual Day 2024</h3></div></div>
+                        <div class="gallery-card"><img src="./Assets/Images/Gallery/Annual/Annual12.JPG" width='400' height='300'alt="Annual Day6"><div class="overlay"><h3>Annual Day 2024</h3></div></div>
+                        <div class="gallery-card"><img src="./Assets/Images/Gallery/Annual/Annual13.JPG" width='400' height='300'alt="Annual Day6"><div class="overlay"><h3>Annual Day 2024</h3></div></div>
+                        <div class="gallery-card"><img src="./Assets/Images/Gallery/Annual/Annual14.JPG" width='400' height='300'alt="Annual Day6"><div class="overlay"><h3>Annual Day 2024</h3></div></div>
+                        <div class="gallery-card"><img src="./Assets/Images/Gallery/Annual/Annual15.JPG" width='400' height='300'alt="Annual Day6"><div class="overlay"><h3>Annual Day 2024</h3></div></div>
+                        <div class="gallery-card"><img src="./Assets/Images/Gallery/Annual/Annual16.JPG" width='400' height='300'alt="Annual Day6"><div class="overlay"><h3>Annual Day 2024</h3></div></div>
+                        <div class="gallery-card"><img src="./Assets/Images/Gallery/Annual/Annual17.JPG" width='400' height='300'alt="Annual Day6"><div class="overlay"><h3>Annual Day 2024</h3></div></div>
+                        <div class="gallery-card"><img src="./Assets/Images/Gallery/Annual/Annual18.JPG" width='400' height='300'alt="Annual Day6"><div class="overlay"><h3>Annual Day 2024</h3></div></div>
+                        <div class="gallery-card"><img src="./Assets/Images/Gallery/Annual/Annual19.JPG" width='400' height='300'alt="Annual Day6"><div class="overlay"><h3>Annual Day 2024</h3></div></div>
+                        <div class="gallery-card"><img src="./Assets/Images/Gallery/Annual/Annual20.JPG" width='400' height='300'alt="Annual Day6"><div class="overlay"><h3>Annual Day 2024</h3></div></div>
+                        <div class="gallery-card"><img src="./Assets/Images/Gallery/Annual/Annual21.JPG" width='400' height='300'alt="Annual Day6"><div class="overlay"><h3>Annual Day 2024</h3></div></div>
+                    </div>
+                </div>
+ 
+                <!-- Sports Tab -->
+                <div id="sports" class="tab-content">
+                    <div class="gallery-grid">
+                        <div class="gallery-card"><img src="./Assets/Images/Gallery/Sports/Sports1.jpg" width='400' height='300' alt="Sports1"><div class="overlay"><h3>Sports1</h3></div></div>
+                        <div class="gallery-card"><img src="./Assets/Images/Gallery/Sports/Sports2.jpg" width='400' height='300' alt="Sports2"><div class="overlay"><h3>Sports2</h3></div></div>
+                        <div class="gallery-card"><img src="./Assets/Images/Gallery/Sports/Archery1.jpeg" width='400' height='300' alt="Archery1"><div class="overlay"><h3>Archery1</h3></div></div>
+                        <div class="gallery-card"><img src="./Assets/Images/Gallery/Sports/Boxing1.jpeg" width='400' height='300' alt="Boxing"><div class="overlay"><h3>Boxing</h3></div></div>
+                        <div class="gallery-card"><img src="./Assets/Images/Gallery/Sports/Archery2.jpeg" width='400' height='300' alt="Archery2"><div class="overlay"><h3>Archery2</h3></div></div>
+                        <div class="gallery-card"><img src="./Assets/Images/Gallery/Sports/Sports3.jpeg" width='400' height='300' alt="Sports3"><div class="overlay"><h3>Sports3</h3></div></div>
+                        <div class="gallery-card"><img src="./Assets/Images/Gallery/Sports/Sports4.jpg" width='400' height='300' alt="Sports3"><div class="overlay"><h3>Sports3</h3></div></div>
+                        <div class="gallery-card"><img src="./Assets/Images/Gallery/Sports/Sports5.jpg" width='400' height='300' alt="Sports3"><div class="overlay"><h3>Sports3</h3></div></div>
+                        <div class="gallery-card"><img src="./Assets/Images/Gallery/Sports/Sports6.jpg" width='400' height='300' alt="Sports3"><div class="overlay"><h3>Sports3</h3></div></div>
+                        <div class="gallery-card"><img src="./Assets/Images/Gallery/Sports/Sports7.jpg" width='400' height='300' alt="Sports3"><div class="overlay"><h3>Sports3</h3></div></div>
+                        <div class="gallery-card"><img src="./Assets/Images/Gallery/Sports/Archery3.jpeg" width='400' height='300' alt="Sports3"><div class="overlay"><h3>Sports3</h3></div></div>
+                        <div class="gallery-card"><img src="./Assets/Images/Gallery/Sports/Archery4.jpeg" width='400' height='300' alt="Sports3"><div class="overlay"><h3>Sports3</h3></div></div>
+                    </div>
+                </div>
+ 
+                <!-- Other Activities Tab -->
+                <div id="activities" class="tab-content">
+                    <div class="gallery-grid">
+                        <div class="gallery-card"><img src="./Assets/Images/Gallery/Activities/Yoga.jpg" width='400' height='300'alt="Art"><div class="overlay"><h3>Yoga</h3></div></div>
+                        <div class="gallery-card"><img src="./Assets/Images/Gallery/Activities/Silambam.jpg" width='400' height='300'alt="Silambam"><div class="overlay"><h3>Silambam</h3></div></div>
+                        <div class="gallery-card"><img src="./Assets/Images/Gallery/Activities/Activity1.jpg" width='400' height='300'alt="Activity1"><div class="overlay"><h3>Activity1</h3></div></div>
+                       <div class="gallery-card"><img src="./Assets/Images/Gallery/Activities/Activity2.jpg" width='400' height='300'alt="Carathe"><div class="overlay"><h3>Carathe</h3></div></div>
+                       <div class="gallery-card"><img src="./Assets/Images/Gallery/Activities/Activity3.jpg" width='400' height='300'alt="Kickboxing"><div class="overlay"><h3>Kick Boxing</h3></div></div>
+                        <div class="gallery-card"><img src="./Assets/Images/Gallery/Activities/Activity4.jpg" width='400' height='300'alt="Activity4"><div class="overlay"><h3>Activity4</h3></div></div>
+                       <div class="gallery-card"><img src="./Assets/Images/Gallery/Activities/Otheractivity3.jpeg" width='400' height='300'alt="Carathe"><div class="overlay"><h3>Carathe</h3></div></div>
+                       <div class="gallery-card"><img src="./Assets/Images/Gallery/Activities/Otheractivity1.jpeg" width='400' height='300'alt="Kickboxing"><div class="overlay"><h3>Kick Boxing</h3></div></div>
+                        <div class="gallery-card"><img src="./Assets/Images/Gallery/Activities/Otheractivity2.jpeg" width='400' height='300'alt="Activity4"><div class="overlay"><h3>Activity4</h3></div></div>
+                    </div>
+                    </div>
+                </div>
+ 
+                <!-- Dance Tab -->
+                <div id="dance" class="tab-content">
+                    <div class="gallery-grid">
+                        <div class="gallery-card"><img src="./Assets/Images/Gallery/Dance/Dance1.jpg" width='400' height='300'alt="Classical"><div class="overlay"><h3>Dance1</h3></div></div>
+                        <div class="gallery-card"><img src="./Assets/Images/Gallery/Dance/Dance2.jpg" width='400' height='300'alt="Folk"><div class="overlay"><h3>Dance2</h3></div></div>
+                        <div class="gallery-card"><img src="./Assets/Images/Gallery/Dance/Dance3.jpg" width='400' height='300'alt="Western"><div class="overlay"><h3>Dance3</h3></div></div>
+                        <div class="gallery-card"><img src="./Assets/Images/Gallery/Dance/Dance4.jpg" width='400' height='300'alt="Group"><div class="overlay"><h3>Dance4</h3></div></div>
+                        <div class="gallery-card"><img src="./Assets/Images/Gallery/Dance/Dance5.JPG" width='400' height='300'alt="Classical"><div class="overlay"><h3>Dance1</h3></div></div>
+                        <div class="gallery-card"><img src="./Assets/Images/Gallery/Dance/Dance6.jpg" width='400' height='300'alt="Folk"><div class="overlay"><h3>Dance2</h3></div></div>
+                        <div class="gallery-card"><img src="./Assets/Images/Gallery/Dance/Dance7.JPG" width='400' height='300'alt="Classical"><div class="overlay"><h3>Dance1</h3></div></div>
+                        <div class="gallery-card"><img src="./Assets/Images/Gallery/Dance/Dance8.JPG" width='400' height='300'alt="Folk"><div class="overlay"><h3>Dance2</h3></div></div>
+                        <div class="gallery-card"><img src="./Assets/Images/Gallery/Dance/Dance9.JPG" width='400' height='300'alt="Western"><div class="overlay"><h3>Dance3</h3></div></div>
+                        <div class="gallery-card"><img src="./Assets/Images/Gallery/Dance/Dance10.JPG" width='400' height='300'alt="Group"><div class="overlay"><h3>Dance4</h3></div></div>
+                        <div class="gallery-card"><img src="./Assets/Images/Gallery/Dance/Dance11.JPG" width='400' height='300'alt="Classical"><div class="overlay"><h3>Dance1</h3></div></div>
+                        <div class="gallery-card"><img src="./Assets/Images/Gallery/Dance/Dance12.JPG" width='400' height='300'alt="Folk"><div class="overlay"><h3>Dance2</h3></div></div>
+                    </div>
+                    </div>
+            
+ 
+                <!-- Events Tab -->
+                <div id="events" class="tab-content">
+                    <div class="gallery-grid">
+                        <div class="gallery-card"><img src="./Assets/Images/Gallery/Events/Event1.JPG" width='400' height='300' alt="Independence"><div class="overlay"><h3>Event1</h3></div></div>
+                        <div class="gallery-card"><img src="./Assets/Images/Gallery/Events/Event2.JPG" width='400' height='300' alt="Republic"><div class="overlay"><h3>Event2</h3></div></div>
+                        <div class="gallery-card"><img src="./Assets/Images/Gallery/Events/Event3.JPG" width='400' height='300' alt="Teachers"><div class="overlay"><h3>Event3</h3></div></div>
+                        <div class="gallery-card"><img src="./Assets/Images/Gallery/Events/Event4.JPG" width='400' height='300' alt="Children"><div class="overlay"><h3>Event4</h3></div></div>
+                        <div class="gallery-card"><img src="./Assets/Images/Gallery/Events/Event5.JPG" width='400' height='300' alt="Founders"><div class="overlay"><h3>Event5</h3></div></div>
+                        <div class="gallery-card"><img src="./Assets/Images/Gallery/Events/Event6.JPG" width='400' height='300' alt="Graduation"><div class="overlay"><h3>Event6</h3></div></div>
+                    </div>
+                </div>
+ 
+
+                <!-- Awareness Programme -->
+
+             <div id="Awareness Programme" class="tab-content">
+                    <div class="gallery-grid">
+                        <div class="gallery-card"><img src="./Assets/Images/Gallery/Awareness/Awareness1.jpg" width='400' height='300'alt="Main Building"><div class="overlay"><h3>Main Building</h3></div></div>
+                        <div class="gallery-card"><img src="./Assets/Images/Gallery/Awareness/Awareness2.jpg" width='400' height='300'alt="Main Building"><div class="overlay"><h3>Main Building</h3></div></div>
+                        <div class="gallery-card"><img src= "./Assets/Images/Gallery/Awareness/Awareness3.jpg" width='400' height='300'alt="Library"><div class="overlay"><h3>Library</h3></div></div>
+                        <div class="gallery-card"><img src="./Assets/Images/Gallery/Awareness/Awareness4.jpg" width='400' height='300'alt="Computer Lab"><div class="overlay"><h3>Computer Lab</h3></div></div>
+                        <div class="gallery-card"><img src="./Assets/Images/Gallery/Awareness/Awareness5.jpg" width='400' height='300'alt="Science Lab"><div class="overlay"><h3>Science Lab</h3></div></div>
+                        <div class="gallery-card"><img src="./Assets/Images/Gallery/Awareness/Awareness6.jpg" width='400' height='300'alt="Classroom"><div class="overlay"><h3>Class Room</h3></div></div>
+                    </div>
+                </div>
+
+
+                <!-- Videos Tab -->
+                <div id="videos" class="tab-content">
+                    <div class="gallery-grid">
+                       <div class="video-card">
+                            <div class="video-thumbnail">
+                                 <video autoplay muted loop>
+                                 <source src="./Assets/Images/Annualvideo1.mp4"type="video/mp4">
+                                 </video>
+                                   <div class="play-btn">
+                                   <i class="fas fa-play"></i>
+                                  </div>
+                            </div>
+                            <h4>Annual Day Highlights</h4>
+                        </div>
+                       <div class="video-card">
+                            <div class="video-thumbnail">
+                                 <video autoplay muted loop>
+                                 <source src="./Assets/Images/Annaulvideo2.mp4"type="video/mp4">
+                                 </video>
+                                   <div class="play-btn">
+                                   <i class="fas fa-play"></i>
+                                  </div>
+                            </div>
+                            <h4>Annual Day Highlights</h4>
+                        </div>
+                        <div class="video-card">
+                            <div class="video-thumbnail">
+                                 <video autoplay muted loop>
+                                 <source src="./Assets/Images/Annualvideo3.mp4"type="video/mp4">
+                                 </video>
+                                   <div class="play-btn">
+                                   <i class="fas fa-play"></i>
+                                   </div>
+                            </div>
+                            <h4>Annual Day Highlights</h4>
+                        </div>
+                        <div class="video-card">
+                            <div class="video-thumbnail">
+                                 <video autoplay muted loop>
+                                 <source src="./Assets/Images/Communityoutreach.mp4"type="video/mp4">
+                                 </video>
+                                  <div class="play-btn">
+                                  <i class="fas fa-play"></i>
+                                  </div>
+                            </div>
+                            <h4>Community Outreach Program</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+ 
+        <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3>Contact Information</h3>
+                <p><i class="fas fa-phone"></i> 044 2275 0923</p>
+                <p><i class="fas fa-envelope"></i>shalomhss@gmail.com</p>
+                <p><i class="fas fa-clock"></i> Mon - Sat: 8:00 AM - 4:00 PM</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="Index.html">Home</a></li>
+                    <li><a href="Aboutus.html">About Us</a></li>
+                    <li><a href="Academics.html">Academics</a></li>
+                    <li><a href="Admission.html">Admission</a></li>
+                    <li><a href="Facilities.html">Facilities</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h3>Location</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.3026060380066!2d80.08342499999999!3d12.888253200000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52f6093b5ba6db%3A0x10ee919ae0949272!2sShalom%20Matriculation%20Higher%20Secondary%20School!5e0!3m2!1sen!2sin!4v1771575203605!5m2!1sen!2sin" width="150%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+          <div class="footer-bottom">
+    <div class="footer-bottom-content">
+        <p class="footer-left">
+            © 2026 Shalom Matriculation Higher Secondary School. All Rights Reserved.
+        </p>
+        <p class="footer-right">
+            Developed by 
+            <a href="https://techfrenz.in" target="_blank">TechFrenz </a>
+            <a href="https://softwaredevelopmentandgraphicdesign.tech/" target="_blank">/ SDGD</a>
+        </p>
+    </div>
+</div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+ 9
+    <!-- Chat Widget -->
+    <div class="chat-widget" id="chatWidget">
+        <i class="fas fa-comments"></i>
+    </div>
+   
+    <div class="chat-popup" id="chatPopup">
+        <div class="social-links">
+            <a href="#" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="#" title="Facebook Messenger"><i class="fab fa-facebook-messenger"></i></a>
+            <a href="#" title="Telegram"><i class="fab fa-telegram"></i></a>
+            <a href="shalomhss@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+    </div>
+ 
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="./Assets/JS/script.js"></script>
+ 
+ 
+        <!-- Bottom Mobile Navigation -->
+<div class="bottom-nav">
+    <a href="Index.html"><i class="fas fa-home"></i><span>Home</span></a>
+    <a href="Aboutus.html"><i class="fas fa-info-circle"></i><span>About Us</span></a>
+    <a href="Academics.html"><i class="fas fa-book"></i><span>Academics</span></a>
+    <a href="Admission.html"><i class="fas fa-user-plus"></i><span>Admission</span></a>
+    <a href="Facilities.html"><i class="fas fa-building"></i><span>Facilities</span></a>
+    <a href="Index.html#contact"><i class="fas fa-phone"></i><span>Contact</span></a>
+</div>
+</body>
+</html>
+ 

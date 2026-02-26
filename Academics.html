@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academics - Shalom Matriculation Higher Secondary School</title>
+    <link rel="stylesheet" href="./Assets/CSS/Academics.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Animated Particles Background for Academics -->
+    <div id="particles-js"></div>
+
+    <!-- Glass Morphism Header -->
+    <header class="glass-header">
+        <nav class="nav-container">
+
+            <!-- Hamburger -->
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div class="nav-left">
+                <a href="Index.html" class="nav-link">Home</a>
+                <a href="Aboutus.html" class="nav-link">About Us</a>
+                <a href="Academics.html" class="nav-link active">Academics</a>
+                <a href="Admission.html" class="nav-link">Admission</a>
+            </div>
+            
+            <div class="logo-container">
+                <img src="./Assets/Images/Logo.png" width='400' height='300' alt="School Logo" class="logo">
+            </div>
+            
+            <div class="nav-right">
+                <a href="Facilities.html" class="nav-link">Facilities</a>
+                <a href="Index.html#blogs" class="nav-link">Blogs</a>
+                <a href="Gallery.html" class="nav-link">Gallery</a>
+                <a href="Index.html#contact" class="nav-link">Contact Us</a>
+            </div>
+            
+            <button class="theme-toggle" id="themeToggle">
+                <i class="fas fa-sun sun-icon"></i>
+                <i class="fas fa-moon moon-icon"></i>
+            </button>
+        </nav>
+    </header>
+
+
+
+    <!-- Mobile Menu -->
+    <div class="overlay" id="overlay"></div>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <button class="mobile-close" id="mobileClose">
+            <i class="fas fa-times"></i>
+        </button>
+        <a href="Index.html">Home</a>
+        <a href="Aboutus.html">About</a>
+        <a href="Academics.html">Academics</a>
+        <a href="Admission.html">Admission</a>
+        <a href="Facilities.html">Facilities</a>
+        <a href="Gallery.html">Gallery</a>
+      <a href="Index.html#contact">Contact</a>
+    </div><br>
+
+<!-- HEADER CARDS -->
+<div class="services-grid" data-animate="fade-in-down">
+    <div class="service-card pre active" onclick="showSection('pre', this)">
+        <h2 style="margin-top: 50px;">Pre-Primary Education</h2>
+        <h3>Nursery, LKG & UKG (Ages 2.5 - 5 years)</h3>
+        <p>Nurturing Curiosity and Development Through Play-Based Education.</p>
+        <button class="arrow-btn">→</button>
+    </div>
+
+    <div class="service-card primary" onclick="showSection('primary', this)">
+        <h2 style="margin-top: 60px;">Primary Education</h2>
+        <h3>Grades 1 – 5 (Ages 6-10 years)</h3>
+        <p>Building strong learning foundations through balanced, play-based exploration and guided instruction.</p>
+        <button class="arrow-btn">→</button>
+    </div>
+
+    <div class="service-card middle" onclick="showSection('middle', this)">
+        <h2 style="margin-top: 60px;">Middle School</h2>
+        <h3>Grades 6 – 8 (Ages 11-13 years)</h3>
+        <p>Building critical thinking, problem-solving, and teamwork skills through project-based learning and innovative design thinking activities.</p>
+        <button class="arrow-btn">→</button>
+    </div>
+
+    <div class="service-card secondary" onclick="showSection('secondary', this)">
+        <h2>Secondary & Senior Secondary Education</h2>
+        <h3>Grades 9 – 12 (Ages 14-18 years)</h3>
+        <p>Preparing students for board exams, top universities, and future success through rigorous academics, innovative learning, and skill development..</p>
+        <button class="arrow-btn">→</button>
+    </div>
+</div>
+
+
+<div id="pre" class="program-body active">
+<div class="philosophy-highlights">
+    <div class="philosophy-box" data-animate="fade-in-left">
+        <h2>Our Pre-Primary Philosophy</h2>
+        <p>
+        At the heart of our pre-primary program is a belief that learning should be fun, engaging, and meaningful. Through interactive play and discovery, we lay the foundations for strong early learning and child development.
+        </p>
+        <p>
+     By encouraging exploration and hands-on experiences, we foster holistic development and a lifelong love for learning. Every child is guided to grow confidently, socially, and academically from day one. 
+        </p>
+    </div>
+
+    <div class="highlight-bg" data-animate="fade-in-down">
+        <h2 style="color: black;">Program Highlights</h2><br>
+        <ul class="highlight-list">
+           <li>Play-based learning sparks curiosity daily.</li>
+           <li>Early childhood growth in all areas.</li>
+           <li>Holistic curriculum develops multiple essential skills.</li>
+           <li>Hands-on activities inspire active learning.</li>
+           <li>Safe environment builds confidence and independence.</li>
+           <li>Strong foundation for lifelong learning success.</li>
+        </ul>
+    </div>
+</div><br>
+<div class="program-section">
+    <h2 class="program-title preprimary-title" data-animate="fade-in-down" >Our Pre-Primary Programs</h2><br>
+    <div class="program-grid">
+        <div class="program-card" data-animate="fade-in-down">
+           <div class="program-icon"><img src="data:image/png;base64,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" alt="day-care"></div>
+            <h3 style="color: black;">Nursery (2.5-3.5 years)</h3>
+            <p style="color: black;">Through interactive activities, children develop the ability to think, speak, and listen in a variety of engaging situations.</p>
+            <ul style="color: black;">
+                <li>Speech and language growth.</li>
+                <li>Indoor and outdoor activities.</li>
+                <li>Fine and gross motor practice.</li>
+                <li>Stories, rhymes, and songs.</li>
+            </ul>
+        </div>
+        <div class="program-card" data-animate="fade-in-down"> 
+           <div class="program-icon">
+            <img src="data:image/png;base64,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" alt="mommy-and-me-classes">
+        </div>
+            <h3 style="color: black;">Lower KG (3.5-4.5 years)</h3>
+            <p style="color: black;">The program blends play-based learning with academic readiness to ensure balanced early childhood development.</p>
+            <ul style="color: black;">
+                <li>Phonics and early reading skills.</li>
+                <li>Basic math and number concepts.</li>
+                <li>Creative arts and craft activities.</li>
+                <li>Introduction to simple technology.</li>
+            </ul>
+        </div>
+        <div class="program-card" data-animate="fade-in-down">
+        <div class="program-icon"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFKUlEQVR4nO2YXUxTZxyHz1oWXeKVccnSG5cth2SJaY0mOl1M+74gIpwCzo8LTeb0RrzYSJYsWTZjZBemIgwxOpA6MQEp4Ji6YYsDtQ63iW5SSlCKKBR62tKBED8ynKW/5RxGgdIvSmm7xH/yC2/ez+c5Pee0gWFe1atKrEpPT19EKd1GCKkhhHQSQkYppZhMSkqKiknUUqlUmZTSnunAfmJkErEIIV+EAPeGENJNKS1QKpVvMYlQlNK8cOF98lS43eIKr1QqVxJCxiIUACHErVKpNsVNgBBiiBSeTkn0r169+vWYwyuVyhWUUs98BeiExI6YCxBCDkQDnk4IVMRDoClaApTSOzEXoJT2RlGgLx4CT6N4Cz2PuYDwCpwL5PasVOTvT8NPmnTYazgYj23Gh1yKdzwuAnt3pEKXnx4WMAzqWRmp53Aod2PsBVDNbtmds8F99sAmEUT4u3NLKjSfpOFK4WY4ajL9AgfK7pwNbuiSs2MnoGPtrQVy9FbODTRQWgvkgI7lYynQB11yVOAhRNirmu2NnUANmwod2w195vh0kLI9LMr2sgFB/Y5fzhhHNWtBdTKNmYBXRK++Px2mdA8rJpCA/3GuM+bg0wTKonALnYyfQGMWmbeAnlPGTUCU0HNNkcOrG+MKLwoYst+GQe2K4MoPoSHzHSYRCgZu3RwlXNCr32cSqcRP4oe1oeEvrAUaMpYziVJJp2zrJd/cb5cUmN2/n5CPoWIpULcC+FEJNKRNRGgLfRVLIcyRHDG7JcX3TEmnbeviB17Ob5BobbelWh6S4i5INO1YU1jlRhmDYFlXVPlSmCsptkBcW863Jmn5D2JHXtT/hrScPystt3kEABGi1CoKCMk/lhsQXhibnCcp7RPXihH2KufPMBW9ixcW/rRVNnnVfSMp6fbCZRSdxJUT6+EoXSZGaAt9XvjjD2asPVirxXffa5BXU9WTp9O+tzDwp/hlUi1v8QfvzfEeJGlMU6A+STrSBqkPvFTLw96wy/uQ/315i2fg0q4vowsPvCbR8k1B4SdT1o/lJUawR/V488gNMUJb6BPG/K1hz5hwuPZbjOh3TH9jHYoav0Rr2x0W/DyytaoBbkO27w89zfzp6yCVam2PFhKeq2zEC0NOgO8O7vN58Uu1/MaFhP+4uh7js678jIxBn74ocoFyW8nkYUvO8GCr7Vh1firvnpvoDxdYmCusWXXejo/qf8Uz/fYQ397cCK4rk4JCwpCVBYPaAT03Cj13aezGp1uHXa6Mxy7nVxc6nUO3HznR7xjEyF+B4oR94AGq2p3Yd9UhSk4CJ+vs2H/VgXNmJ0zWqTVPrK3w/Dzx0P5z6yDcxn2z4F8acjxuY+7ekFcZBrXNn/3Lls+CQAfO0KADzXVVaKqtDDjnxR+FE/CtX2PEZceoowduY673bM+VbXjW04zHLud4OAJ+P74XxjxYLZ142GFCd/tdb7ru3kZ32x2x32q5h8EB6wy44SACwtw+yz30mVrg+O0sLHdvefd92HYToy0aPLt5CINdLeLcYac99P+MfMHv1JeIAHOJ8eJ5tP1yHQM9XbME+h90oa3lGm5crJvzvs21lehQKGBWKDxhC8z5EJ/8eb3Je7i3HWlqIxB4mL1GXBRJCmQycIsXz0iRTBbxfh3/JZTAQLBX2fPStLAPapPLcVQmw84lS8QIbZNcvsACl7nNISRaQj5IDMN0KBSHg0DkM/+H6pDL1Wa5/JpZoXhqViiedCgUzeaVKzPizfWqmAWofwHysgqbOMPO4gAAAABJRU5ErkJggg==" alt="man_reading_a_book"></div>
+            <h3 style="color: black;">Upper KG (4.5-5.5 years)</h3>
+            <p style="color: black;">The program encourages early writing, problem-solving, and creative thinking to build confidence and overall school readiness.</p>
+            <ul style="color: black;">
+                <li>Blending sounds and word building.</li>
+                <li>Early writing and sentence formation.</li>
+                <li>Fun problem-solving activities.</li>
+                <li>Complete school readiness program.</li>
+            </ul>
+        </div>
+    </div>
+</div><br>
+<div class="literacy-section" data-animate="fade-in-down" >
+    <div class="literacy-numeracy-container">
+        <!-- Literacy Program -->
+   <div class="literacy-content">
+    <h2>
+        <i class="program-icon"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAADsElEQVR4nO2azWtUVxiH76LtX9CViaA4maSTzGi+qU3Totg2MYgfaEWK1WhSMwkutI2RQi1Y0BKhi0KjBAwoKCYQjSlRO4mBBLvqX5FgF3EjdWW7eMqLXg3XvD137px7G+U88MB9zz3z+50zWWY8z+FwOBwOh8PhcPwXZXna1/ayuLYPSrG8j8flvRTK83z2IruPtvI+puVdqflyRsnzbLOuh8X1ebDpuh6+W9/D99Zz8yxY/wIqjoFYak5lL2tSPZxKHeOpnynPqa/ol3er5ZyvkOkG0bNEppsBPzPTzalVd87MXt7JHeXH7FH+zHWBr5VTep5X28kaP1OebeUuP2u2i4e5Ls7LXYoOqjvC+bojENTWQZ93xJa53NpOzhUd1HiIh02HoeEQm2WWZ9HmYePObD5MizzLXYoO2vwliNpsgyQyI3e0HgRRm4PrYTR1xJGp7TOy5QsQtTm4HkZTRxyZ2j4jnxwAUZttkERm5I72/SBqsw2SyIzcseNzELU5uB5GU0ccmdo+I7v3gqjNwfUwmjriyNT2Gdm3B0RttkESmZE7DuwCUZttkERm5I6DO0HU5uB60JXemzriyNT2GencAaI2B9eDrvTe1BFHprbPSHcHiNpsgyQyI3fk20HUZhskkRm543gbiNrsM1zgwfA0hHDe1BFHptZh5MSnIGqzz417EFZTRxyZWoeR/m0garPP3SkIq6kjjkytw8i3W0HUZp8HE8z/fhuMTjBn6ogjU+swcmYLiNpsgyQyI3ec/RhEbbZBEpmRO861gqjNNkgiM3LHYAuI2myDJDIjd/z0AYjabIMkMiN3/Pw+iNpsgyQyI3cMNYMYnEv1l2YeDTVz92IjW/21i420DjUxNdTEkq0e7R6hGW4EMTi/Lmr3CM1IA4jaHJVL9bx7uYGvR+r5x88caeDvkXpOyrtS862d+2odiNpcKldq6fczr9bxja1ca+e+vgnEZfOiv7bavbbp5Q8kgvcIzViOJ2M5uFb77F/XY1naxnIsyNoqd2E09+znN6MbKZO10Rx/Ff0FjGe5fzML4zUMeK8p4zWcljvcrGGm6A9PVNMxWQ2T1Ty9nWHgVqW9HzHEzeRGyiYznJazyx1+rWF7pKA7Vfxw5z2wqbHTct9UFWe9UihU0VGoZOa3NE8KlVCyaVq0rukKPrTR8fysM4WKiH/5OJhNc2E2DWG8n2bQe9P4o56351JcmN/A0nwKVnQDS3MpBmc/4q3/+7wOh8PhcDgcDof3ZvMvjkYBFCH4jb0AAAAASUVORK5CYII=" 
+             alt="saving-book" style="vertical-align: middle; width: 50px; height: 50px;"></i>
+        Literacy Programme
+    </h2>
+    <p>Our literacy program helps children build strong reading and writing skills from an early age. Through fun phonics activities, 
+       stories, and interactive learning, children develop confidence in language and communication.</p>
+    <ul class="star-list" style="margin-top:40px;">
+        <li>Playful phonics and sound learning.</li>
+        <li>Alphabet and letter recognition.</li>
+        <li>Early reading and writing skills.</li>
+        <li>Story listening and understanding.</li>
+    </ul>
+</div>
+
+    <!-- Numeracy Program -->
+<div class="numeracy-content" data-animate="fade-in-down">
+<h2>
+    <i class="program-icon"><img src="https://img.icons8.com/color/50/abacus.png"
+         alt="Abacus Icon" class="program-icon-img"></i>Numeracy Programme
+</h2>
+    <p>
+       Through fun, hands-on activities and play-based learning, children develop confidence in counting, shapes, and problem-solving.
+    </p>
+    <ul class="star-list" style="margin-top: 100px;">
+        <li>Number recognition and counting skills.</li>
+        <li>Shapes, patterns, and spatial learning.</li>
+        <li>Real-life math activities and experiences.</li>
+        <li>Problem-solving through fun games.</li>
+    </ul>
+</div>
+</div>
+</div>
+</div>
+<!-- ===== PRIMARY ===== -->
+<div id="primary" class="program-body">
+    <div class="philosophy-highlights">
+          <div class="philosophy-box">
+            <h2>CBSE Curriculum with Innovation</h2>
+             <p>
+        Shalom Matric Hr. Sec. School follows a CBSE-aligned curriculum enriched with design thinking and modern teaching methods. Strong foundations in English and Mathematics are built from the early years, 
+        while essential literacy and numeracy skills are developed across all subjects through engaging, activity-based learning.
+        </p>
+        <p>
+     All classrooms are equipped with smart boards and digital learning tools to support interactive lessons. 
+     This technology-enabled environment makes learning more engaging, effective, and enjoyable for every student.
+        </p>
+        </div>
+        <div class="highlight-bg">
+           <h2 style="color: black;">Our Goals</h2><br>
+        <ul class="highlight-list">
+           <li>Provide a safe, caring, and inspiring learning environment.</li>
+           <li>Build strong academic foundations and life skills.</li>
+           <li>Develop confident, creative, and independent learners.</li>
+           <li>Encourage critical thinking and problem-solving abilities.</li>
+           <li>Promote values of respect, responsibility, and integrity.</li>
+        </ul>
+    </div>
+    </div>
+
+   <div class="program-section">
+    <h3 class="program-title primary" data-animate="fade-in-down">Primary School Journey</h1>
+
+   <div class="primaryprogram-grid">
+
+    <!-- ================= Grade 1 & 2 ================= -->
+<div class="primaryprogram-section">
+
+    <!-- TOP ROW (ICON + TITLE) -->
+    <div class="primaryprogram-header">
+        <div class="step-circle">1-2</div>
+
+        <div class="primaryprogram-text">
+            <h3>Grade 1 & 2 Learners</h3>
+            <p>First years of formal schooling.</p>
+        </div>
+    </div>
+
+    <!-- CARD BELOW -->
+    <div class="primaryprogram-card" data-animate="fade-in-down">
+        <div class="primaryprogram-columns">
+
+            <div class="primaryprogram-col">
+                <p>
+                    Our Childrens engage flexible CBSE curriculum builds strong foundations in academics while encouraging creativity, technology use, and physical fitness.
+                </p>
+                <ul>
+                    <li>Early literacy and numeracy development.</li>
+                    <li>Smart board–enabled interactive classrooms.</li>
+                    <li>Art, craft, and creative activities.</li>
+                    <li>Sports and physical fitness programs.</li>
+                </ul>
+            </div>
+
+            <div class="primaryprogram-col">
+                <p>
+                    Teachers design personalized learning programs that build on each student’s interests, strengths, and learning goals.
+                </p>
+                <ul style="margin-top: 70px;">
+                    <li>Inquiry-based and experiential learning.</li>
+                    <li>Social interaction and teamwork skills.</li>
+                    <li>Basic technology and digital exposure.</li>
+                    <li>Educational trips and outdoor experiences.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- END Grade 1 & 2 -->
+    <!-- ================= Grade 3 & 4 ================= -->
+    <div class="primaryprogram-section">
+
+        <div class="primaryprogram-header">
+            <div class="step-circle">3-4</div>
+
+        <div class="primaryprogram-text">
+            <h3>Grade 3 & 4 Learners</h3>
+            <p>Building confidence and independence.</p>
+        </div></div>
+
+        <div class="primaryprogram-card" data-animate="fade-in-down">
+            <div class="primaryprogram-smallboxes">
+
+                <div class="primaryprogram-smallbox">
+                    <div class="icon"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEo0lEQVR4nO2Yb0wbZRzHz2iMS4z6zkRZeNOG+GIvjS+VbSJ/7g7GdmMwegQRyqh0QKGjxVIIhEFZezIxgcGgbI7WZuyPwTscY9e9MWYmZlmmZg4TJmyJljrGcPTmys88Vzuv15b1xboehm/yfXP3y9Pv59fnee65w7BNbWpTSRNM5W8FljgNHL4cMnEWODID20Dh/cARIPOf6B6mdIHY+ajw/xr3YEoXhKZMHADiHrahAVh8CVO6gCPOrAPwJaZ0AUdmxFzE6BqbnYZtBAGbnYYWLJrzoll8Ai7kqVOd6/+hkpnedA3PDNJexkfzzIPiadsl8lzrZ+geVDpJqBq7AtpRAQ4c/xvMzEWwWl940pgmKhuQkx6e5pliDc8s014GwibOt0LmqXo4YWcOQ5VzDarGIMIHBwLQY6mJNyZM5qZ/fzQPhK9w9JwYTlr40ssOHc071qThaa8DdrgaRYAF/bFfo8KHrXUCmG1z0Nv89uPgF4nXgSX6gCMCEYudp15+6uHpy44s2ut4FBmegaIL3WL4nPEmIW54qWuOA7R3zgCLdwFLrMR4Uj/9f4D61r6F9jJz8vDI5HmrCFA/1D4nDxusGIHAvqMAVc5oEC4y+K0xHIb1OclZAzRvL48VHjnLYxQBLln6bshDBor6YPE9MywT3VehoX8CtCPBaAD8GnAkldRFTHuZ6VjhS2aOiOG3jxvWHqJdRwawnNclAtzP7zWgccB4LA1au6ehduARcPgPMIXvBsCeQ/eSC8A77sUCKPy6QwTYf6JlUR5+rdIJ/swWWMxsWQOq/4mL0pRkgFuxAHJPm0WAQZvtFzmAUPK52P2lnM75RH7DlFwAxiQPr+EdsN1lgMxTDfBH7bBPDnCf7AlNH7JnOOUAlMfzvIZn2mivY/Hx9vlNaPvMHzGu/lY9JNtlnODfYQkBUPZtKQcIi7pufbGUZwpo3jFRONmx+r6rUTCbzL49ejPoaq0worPBz9UD8FAzIIa/m9W2giUo07M6Ssh1WHdIBJC6tboNrlAdcKe48zvFA7RU0zeL9C0RAGFXGIzB8f6qdxQNUPERMWvTN8HeOBD65oZVj137pmIB6Ir829vwUqjTaUFzMBoA2WSp842Olr2kSICisgI/AkDe/WEZVDY1xYToaK+9oUiAgv2FK2EAZGPdrlm9yfAgFsSnXTWTigP4YB8lSAGaa7M9riMHth6y1C3KAcoNRvjxiyKNogDe3bM3KAVob9jZiK57PPVbujo//ikc3t6lg6Vzu9Dpc1YxAHBS9UrArV4V3GoI+6/xjDekNQM92umrJ4ul34V+VwxAwK3+RBpecKtuy2uAJSpkLy+sIgAAdd+l8ksBEFBUHUsMyQAsigAIuFSWiPAu9V04m/6avA5Y/HokALkz5QCQaPenqVeBw4OS18cgupZygEDi3c+SfXG4Fm9M07MCSLT7Yi2LW2UAgykHCCTYfSRgiakIgCm8POUAgku1kEj3kYAjfBEAk7lvpR7ArZ7/r/sqP5pS8WqBI+YlD7A74U8oqZ1CbnWu4FbNCS71zYBLha9XCxyZBxyxEAIh89arNaXqLLSpTWEbV/8AieV/6jIkXgwAAAAASUVORK5CYII=" alt="trekking"></div>
+                    <strong style="color: black;">Beyond the Classroom</strong>
+                    <p style="font-size: 16px; color: #000000;">Educational field trips and excursions that provide real-world learning experiences and practical knowledge.</p>
+                </div>
+
+                <div class="primaryprogram-smallbox">
+                    <div><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAACQ0lEQVR4nO2VMWvbQBiGbzYFTxkKlQppZUO35gqWvXTpUAk5/ReSLn8ia5AzZtEiUwoWEjbZ7EKHUingxbv9I5KQBO9fOUkubhxbpyhOz/ReeJfT3aPvk+7eQ0hISEhISChH4L+RwK/1oafcJfaVcwjrdbQLfKDwnnIFfg3+tnJNn/HOR8mXWYFn7ikh73yU/tI1L/Brt7zz0cYX9Go3vPNRcqDWfiEl4J2PaBqkB2oFfgnf3r7inb+cFCHdk6mV4MngaPv83dYHIrcwkd0DIs2wLc8TE2lKx96br5sPrYHvXyQYtvswMu5St89hdFh/Kj6TsLlfxUQOMZEhxwGde6/4Kxi14Z6v6bOyfCZh82UFE2nMAF948u5o7wVdm375leIzG2FZPpOwLQ0KwBMfEKlP12ZbZk0D7duyfCYVhS+c28DQuCnLf4YG6IFd20DwLA2UEU2b5MCuFn8Jw8+7ke1Ak2hkhHTPJx4awT8tHgrkOnd8YMz1hYjXbFme6lrdxsz21HnqxpSOmV9bzbL8wmLJdSrTxVWr2wjtrgob7TUCOrco/9FiyXXTxRXLU8e5xWe2PHVydPYxvfgY+KXEkut2Vx2wFr/URP7Fl/FLNpCf60WLXxgx8ree6+UaONz+vbHtXAfe7g2udPpLbzmx5nYifebE+jxxpE3pmHNhNLnln/z4VO3EWtiJddhkJ9ICOpcr/vHEqDiRPs6D/3lJrE3Ofqa5zgMfOZE2YIUvuc8LHz0CnpgXPtr5BoSEhISE/hv9Bk49SJ18ugftAAAAAElFTkSuQmCC" alt="groups"></div>
+                    <strong style="color: black;">Presentations</strong>
+                    <p style="font-size: 16px; color: #000000;">Opportunities to build public speaking and communication skills through class activities, assemblies, and group presentations.</p>
+                </div>
+
+                <div class="primaryprogram-smallbox 3">
+                    <div class="icon"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEd0lEQVR4nO2X72scRRjHpykIKvYfaJBdrQit+s4WC4Iv/AF6Qel5UJsfO9GYNKCtJtBas9OV5mLuZkybK91NbNK+MSU0CkWsCZS+aKqv7BtfqPiieVNMWjWKmUmlsYWRZ+8ut7u3d7e9Pbs5yQMP3D43zzOf77MzdzMIrdv/0ORU4j45HUvL6diCnI7Ny5lYCmKoXkwC8EyTdHssherFJHS+SEDTdVQvJu1lUyTgF1TfS6hpENXVJp6Jpew3UY+beN2iMuXE0g7FFAuqJeS3c1y2fpl1+AwxxRLzMAatRVOtpZhqiWUABe+9wGX/LJfJy1z2XMgKyPkyjEVryZQT/G3F4rcdkHLrSSHfOCdk8zkhnxgrxLNvgt+GHLQWTLH4QSec07eNZb3U96olUkjKDVHCH3V11uRXnM9PjQn55Lin+54xisWHIjuIKZYQBRh+/fHx3x8q023bt2QWN8HYggCxFJaj6oOYavHj7m6K8UoCFFOccsf4cFiO6g9iUm5QLTFSCbqcGGTIhtAcoQ5ihmwo7mo4+FAHwqoOYncpohJ8qANh1QcxQzaoJs9UFsCHK8HfswMhJpRiQpcxYcl8rJKAQi5LYkL/hho1hQoMf5hpmDAJrulU+AlQLHEN3E8A5OBCPg4N1NZHH8WELUDB73+ek+nTZ22Hz/YkhN0AaMMwGtr01LZc5+3vsM5O+gowxVXVEnP+b4B+uppP6DLUhNq5xtwow7EArMUdJXQyX3D0i/Pys/MX5cTXF+Xo51/lJln1nzTCfnN078eWXvagnwDVEpdUS8z6Ceg0jAcwYT8UmkB/hdrOuUpz0Ek3vJ5+DBN6Jz+g88gxOXhqUqZOn5V7+4e9AqS3c85anmPDhGLyM34CwNoNttW5lLxemoPeAebVQhqhY5hQV3JXf0Z2eeDd65bNa33sOe+b9LyBtGoKWkoAGNSAWn5zlOKwWfPLtsNINWKdrbR+MOga1J08LrsHMq5Ys5HZ1N5Hn8ck/WzCMHx/0jybeJ9iiv3lBIBBLagJtWGOShwthz6WGqH/tBqphxHW2TEI7u4xyiyVrKMA5oR9xOS7VIvHKwnwWiWO3b0f5TY0PQo/Z3/Aw+vvHqq5AHXkr+1whay1gHiBdRFphF2Bh1e7emouoHHk5uYtmZuNtRbw2t7e/H75DmmH2Vvw8Er7OzURoJh8Jbv++S00JTeCu2I1EPBynlVPv4kS7w/djwldfLG5s0YCxABcdBRLJMvFwgh4qQVY6Z/wX2In7Dl4ZPSFPR1VCZh/5mkZxlEVAoAVmFcT4t0HdtabgHj3gZ2upKaO975xDtIIuwYetQDNhwNYUQDlVzWdzkUtAAfkKFaus0uY0NmoBWgBOYqV63RCI+xM1AJwQA6fRJbO3riiFsACcRQlaoTtw/on+6MWoAXk8FO+SyM0HrUAHJCjKLHtw9T2dsJ2RC2gLSCHT+LQZvuuELmAoUAc2USdrWTXHb2VSExtBHfG7pkA/e45bNN0OpC70iXLxf5rAVoVHOuGIrJ/AfNsEgEMkq+GAAAAAElFTkSuQmCC" alt="leadership--v2"></div>
+                    <strong style="color: black;">Leadership</strong>
+                    <p style="font-size: 16px; color: #000000;">Participation in the Student Representative Council to develop leadership, responsibility, and teamwork skills.</p>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <!-- END Grade 3 & 4 -->
+    <!-- ================= Grade 5 ================= -->
+    <div class="primaryprogram-section">
+
+        <div class="primaryprogram-header">
+            <div class="step-circle">5</div>
+        
+
+        <div class="primaryprogram-text">
+            <h3>Grade 5 Learners</h3>
+            <p>Preparing for middle school excellence</p>
+        </div></div>
+
+        <div class="primaryprogram-card" data-animate="fade-in-down">
+            <div class="primaryprogram-text">
+                <p style="font-size: 20px; margin-bottom: 50px; color: #000000;">
+                    Grade 5 provides students with exciting academic and co-curricular opportunities that build confidence and responsibility. With guidance from experienced teachers, students strengthen their skills, explore their talents, and prepare for higher learning.
+                </p>
+
+                <ul class="model-list" style="color: #000000;">
+                    <li ><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEv0lEQVR4nO2Yf0wbZRjHX3Q63JJpjPtH49SNMdRk/0x66IjEBO7KgLuODDcxoi4bhjhGhrJ7y8LKzGQTKO8VRGzfqyi6uHX+yEqCYRo1cYkMF2O2qMn+cRtxbH+YGYdmGMZjnsMi0Bbacj0g8k2epLn2nvfzfZ/nee9SQha1qEUtaqr2Nb9zv8r0Nyjjv2LgZ7xG5ruoh29QGe+iTP+bajpMDFXTb6pM73a28I1kPsnlct2itvAiqvHPp0JHDaafUZm/zOVyLZk7cM/7K1RNr1IZvxAzeHhVLquM1+9x87stA6ct/tVU44dVjV9LFDzMCNOvU6Z79zL+cNLAVc2fTTU9QBkfMQucRpgTbEVsSQKQMmtolytwO9X0ElXjfcmCplHnhP9APbx8jztwR9zgTo9/JWW6Spk+YDm4FhZXsWVr2vR7ZwSnzb50VdM9KtP/nAfgMLm9+DAe0U6Nr59MDZBCW/y5eEZTxkcTSV6r+aCpvQHe45XQ8+4W+O5INlw8vgb+OrEMLhxPS8asnMLWLgkEbiUq41/EeuP+1nZo7aiDo/pO+LKrAM59uAGufHwfjASXAHSTiPFLYG3yKsP0k4Qy/v3ULw60tkJbRx0E/Nvh6658+PnYevjtk5Uw2p0SFTS026ePPAndndtA91VDY/shcGo8mQbOkEqPZyk+FVXGz+HF84FHokLiTuOO485jBbASWBGsjKUzwfh5fIi6vN5lYWd9CPbiR6uNXsaext5ubn8daj0+a0G18N6f8RkRMoCnEdX40FwC07E2uYGnz94W36MxPQNCBoyKHPbeabzvaPyS9eB8EN+Tqpu998QEHslASOVe720V9Y2VFfVNSQff9ZobKg+yfa7OztS4wKczgBJE+UVBUiD36TJ4oaYeVGbe6aJqOuyobQB76Q7ANXCthOCnN6B0GMn/jRzHM1C6m8KrTR0Jg9e434ay6v3wVPGz43kxbJL8lukGbJJyauIioXiioBg276yE3Qe1mMGrGlqhpOIVyC7cEpbPMCDK35htIEWQ5GuRFgtFlqTApufK4aW6Q1HBXz7gBmX7LsiyO6LmEYyQf8c1TTMgSMqD0y84OXJLnjfmpMbtNQI/47V4cjy+qfgB0wxk5SlF8Sw+sSoYidybKToKTTNgk4qciUDMJmxSkdM8A6LMrTeg+EysgPKZ9QbkHjMrcNZyA6J81sQKyFetN6BcMc2AIMnDVhsQJGXYRAPK6BwYGDXNwMbCklWCqGwV7EWNgqT0CpIylATgIUGUe401RGUrrhk/fF9GAfSlgRH96fnRfme325fiw80mysdsojwyi0EdsUnyUcyFORPa8UkG+jMGoD8DjDi97lIs9zwmyetskvKBIMo34wEXRLkrM9+RPmvocfivSCr0rb0+bqAv7Q+8Fuv9Qp4s2CT5pxkNiMqPWaLDZhp4SBAkDE4uH2ufb9cA9C7HWXCTOJSTk5OK7/LTwL+JvyHJEATJYIS/UhI6iwXRUTFxNsZaxlFOkimIZCBIBhPNlykqpcaQInyevI0kWxAkbREMtM0mpyDJVRjECkGQrIIguTHBwDCcIA+RhSTAQf5v9xlZaIIesgKCZACC5DJ8Su4iC1HQTTZjzDUH+b/oH9w+70GXuMNaAAAAAElFTkSuQmCC" alt="motarboard" >Improving academic skills and performance</li>
+                    <li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEv0lEQVR4nO2Yf0wbZRjHX3Q63JJpjPtH49SNMdRk/0x66IjEBO7KgLuODDcxoi4bhjhGhrJ7y8LKzGQTKO8VRGzfqyi6uHX+yEqCYRo1cYkMF2O2qMn+cRtxbH+YGYdmGMZjnsMi0Bbacj0g8k2epLn2nvfzfZ/nee9SQha1qEUtaqr2Nb9zv8r0Nyjjv2LgZ7xG5ruoh29QGe+iTP+bajpMDFXTb6pM73a28I1kPsnlct2itvAiqvHPp0JHDaafUZm/zOVyLZk7cM/7K1RNr1IZvxAzeHhVLquM1+9x87stA6ct/tVU44dVjV9LFDzMCNOvU6Z79zL+cNLAVc2fTTU9QBkfMQucRpgTbEVsSQKQMmtolytwO9X0ElXjfcmCplHnhP9APbx8jztwR9zgTo9/JWW6Spk+YDm4FhZXsWVr2vR7ZwSnzb50VdM9KtP/nAfgMLm9+DAe0U6Nr59MDZBCW/y5eEZTxkcTSV6r+aCpvQHe45XQ8+4W+O5INlw8vgb+OrEMLhxPS8asnMLWLgkEbiUq41/EeuP+1nZo7aiDo/pO+LKrAM59uAGufHwfjASXAHSTiPFLYG3yKsP0k4Qy/v3ULw60tkJbRx0E/Nvh6658+PnYevjtk5Uw2p0SFTS026ePPAndndtA91VDY/shcGo8mQbOkEqPZyk+FVXGz+HF84FHokLiTuOO485jBbASWBGsjKUzwfh5fIi6vN5lYWd9CPbiR6uNXsaext5ubn8daj0+a0G18N6f8RkRMoCnEdX40FwC07E2uYGnz94W36MxPQNCBoyKHPbeabzvaPyS9eB8EN+Tqpu998QEHslASOVe720V9Y2VFfVNSQff9ZobKg+yfa7OztS4wKczgBJE+UVBUiD36TJ4oaYeVGbe6aJqOuyobQB76Q7ANXCthOCnN6B0GMn/jRzHM1C6m8KrTR0Jg9e434ay6v3wVPGz43kxbJL8lukGbJJyauIioXiioBg276yE3Qe1mMGrGlqhpOIVyC7cEpbPMCDK35htIEWQ5GuRFgtFlqTApufK4aW6Q1HBXz7gBmX7LsiyO6LmEYyQf8c1TTMgSMqD0y84OXJLnjfmpMbtNQI/47V4cjy+qfgB0wxk5SlF8Sw+sSoYidybKToKTTNgk4qciUDMJmxSkdM8A6LMrTeg+EysgPKZ9QbkHjMrcNZyA6J81sQKyFetN6BcMc2AIMnDVhsQJGXYRAPK6BwYGDXNwMbCklWCqGwV7EWNgqT0CpIylATgIUGUe401RGUrrhk/fF9GAfSlgRH96fnRfme325fiw80mysdsojwyi0EdsUnyUcyFORPa8UkG+jMGoD8DjDi97lIs9zwmyetskvKBIMo34wEXRLkrM9+RPmvocfivSCr0rb0+bqAv7Q+8Fuv9Qp4s2CT5pxkNiMqPWaLDZhp4SBAkDE4uH2ufb9cA9C7HWXCTOJSTk5OK7/LTwL+JvyHJEATJYIS/UhI6iwXRUTFxNsZaxlFOkimIZCBIBhPNlykqpcaQInyevI0kWxAkbREMtM0mpyDJVRjECkGQrIIguTHBwDCcIA+RhSTAQf5v9xlZaIIesgKCZACC5DJ8Su4iC1HQTTZjzDUH+b/oH9w+70GXuMNaAAAAAElFTkSuQmCC" alt="motarboard">Active in sports and cultural events</li>
+                    <li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEv0lEQVR4nO2Yf0wbZRjHX3Q63JJpjPtH49SNMdRk/0x66IjEBO7KgLuODDcxoi4bhjhGhrJ7y8LKzGQTKO8VRGzfqyi6uHX+yEqCYRo1cYkMF2O2qMn+cRtxbH+YGYdmGMZjnsMi0Bbacj0g8k2epLn2nvfzfZ/nee9SQha1qEUtaqr2Nb9zv8r0Nyjjv2LgZ7xG5ruoh29QGe+iTP+bajpMDFXTb6pM73a28I1kPsnlct2itvAiqvHPp0JHDaafUZm/zOVyLZk7cM/7K1RNr1IZvxAzeHhVLquM1+9x87stA6ct/tVU44dVjV9LFDzMCNOvU6Z79zL+cNLAVc2fTTU9QBkfMQucRpgTbEVsSQKQMmtolytwO9X0ElXjfcmCplHnhP9APbx8jztwR9zgTo9/JWW6Spk+YDm4FhZXsWVr2vR7ZwSnzb50VdM9KtP/nAfgMLm9+DAe0U6Nr59MDZBCW/y5eEZTxkcTSV6r+aCpvQHe45XQ8+4W+O5INlw8vgb+OrEMLhxPS8asnMLWLgkEbiUq41/EeuP+1nZo7aiDo/pO+LKrAM59uAGufHwfjASXAHSTiPFLYG3yKsP0k4Qy/v3ULw60tkJbRx0E/Nvh6658+PnYevjtk5Uw2p0SFTS026ePPAndndtA91VDY/shcGo8mQbOkEqPZyk+FVXGz+HF84FHokLiTuOO485jBbASWBGsjKUzwfh5fIi6vN5lYWd9CPbiR6uNXsaext5ubn8daj0+a0G18N6f8RkRMoCnEdX40FwC07E2uYGnz94W36MxPQNCBoyKHPbeabzvaPyS9eB8EN+Tqpu998QEHslASOVe720V9Y2VFfVNSQff9ZobKg+yfa7OztS4wKczgBJE+UVBUiD36TJ4oaYeVGbe6aJqOuyobQB76Q7ANXCthOCnN6B0GMn/jRzHM1C6m8KrTR0Jg9e434ay6v3wVPGz43kxbJL8lukGbJJyauIioXiioBg276yE3Qe1mMGrGlqhpOIVyC7cEpbPMCDK35htIEWQ5GuRFgtFlqTApufK4aW6Q1HBXz7gBmX7LsiyO6LmEYyQf8c1TTMgSMqD0y84OXJLnjfmpMbtNQI/47V4cjy+qfgB0wxk5SlF8Sw+sSoYidybKToKTTNgk4qciUDMJmxSkdM8A6LMrTeg+EysgPKZ9QbkHjMrcNZyA6J81sQKyFetN6BcMc2AIMnDVhsQJGXYRAPK6BwYGDXNwMbCklWCqGwV7EWNgqT0CpIylATgIUGUe401RGUrrhk/fF9GAfSlgRH96fnRfme325fiw80mysdsojwyi0EdsUnyUcyFORPa8UkG+jMGoD8DjDi97lIs9zwmyetskvKBIMo34wEXRLkrM9+RPmvocfivSCr0rb0+bqAv7Q+8Fuv9Qp4s2CT5pxkNiMqPWaLDZhp4SBAkDE4uH2ufb9cA9C7HWXCTOJSTk5OK7/LTwL+JvyHJEATJYIS/UhI6iwXRUTFxNsZaxlFOkimIZCBIBhPNlykqpcaQInyevI0kWxAkbREMtM0mpyDJVRjECkGQrIIguTHBwDCcIA+RhSTAQf5v9xlZaIIesgKCZACC5DJ8Su4iC1HQTTZjzDUH+b/oH9w+70GXuMNaAAAAAElFTkSuQmCC" alt="motarboard">Focus on discipline and respect</li>
+                    <li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEv0lEQVR4nO2Yf0wbZRjHX3Q63JJpjPtH49SNMdRk/0x66IjEBO7KgLuODDcxoi4bhjhGhrJ7y8LKzGQTKO8VRGzfqyi6uHX+yEqCYRo1cYkMF2O2qMn+cRtxbH+YGYdmGMZjnsMi0Bbacj0g8k2epLn2nvfzfZ/nee9SQha1qEUtaqr2Nb9zv8r0Nyjjv2LgZ7xG5ruoh29QGe+iTP+bajpMDFXTb6pM73a28I1kPsnlct2itvAiqvHPp0JHDaafUZm/zOVyLZk7cM/7K1RNr1IZvxAzeHhVLquM1+9x87stA6ct/tVU44dVjV9LFDzMCNOvU6Z79zL+cNLAVc2fTTU9QBkfMQucRpgTbEVsSQKQMmtolytwO9X0ElXjfcmCplHnhP9APbx8jztwR9zgTo9/JWW6Spk+YDm4FhZXsWVr2vR7ZwSnzb50VdM9KtP/nAfgMLm9+DAe0U6Nr59MDZBCW/y5eEZTxkcTSV6r+aCpvQHe45XQ8+4W+O5INlw8vgb+OrEMLhxPS8asnMLWLgkEbiUq41/EeuP+1nZo7aiDo/pO+LKrAM59uAGufHwfjASXAHSTiPFLYG3yKsP0k4Qy/v3ULw60tkJbRx0E/Nvh6658+PnYevjtk5Uw2p0SFTS026ePPAndndtA91VDY/shcGo8mQbOkEqPZyk+FVXGz+HF84FHokLiTuOO485jBbASWBGsjKUzwfh5fIi6vN5lYWd9CPbiR6uNXsaext5ubn8daj0+a0G18N6f8RkRMoCnEdX40FwC07E2uYGnz94W36MxPQNCBoyKHPbeabzvaPyS9eB8EN+Tqpu998QEHslASOVe720V9Y2VFfVNSQff9ZobKg+yfa7OztS4wKczgBJE+UVBUiD36TJ4oaYeVGbe6aJqOuyobQB76Q7ANXCthOCnN6B0GMn/jRzHM1C6m8KrTR0Jg9e434ay6v3wVPGz43kxbJL8lukGbJJyauIioXiioBg276yE3Qe1mMGrGlqhpOIVyC7cEpbPMCDK35htIEWQ5GuRFgtFlqTApufK4aW6Q1HBXz7gBmX7LsiyO6LmEYyQf8c1TTMgSMqD0y84OXJLnjfmpMbtNQI/47V4cjy+qfgB0wxk5SlF8Sw+sSoYidybKToKTTNgk4qciUDMJmxSkdM8A6LMrTeg+EysgPKZ9QbkHjMrcNZyA6J81sQKyFetN6BcMc2AIMnDVhsQJGXYRAPK6BwYGDXNwMbCklWCqGwV7EWNgqT0CpIylATgIUGUe401RGUrrhk/fF9GAfSlgRH96fnRfme325fiw80mysdsojwyi0EdsUnyUcyFORPa8UkG+jMGoD8DjDi97lIs9zwmyetskvKBIMo34wEXRLkrM9+RPmvocfivSCr0rb0+bqAv7Q+8Fuv9Qp4s2CT5pxkNiMqPWaLDZhp4SBAkDE4uH2ufb9cA9C7HWXCTOJSTk5OK7/LTwL+JvyHJEATJYIS/UhI6iwXRUTFxNsZaxlFOkimIZCBIBhPNlykqpcaQInyevI0kWxAkbREMtM0mpyDJVRjECkGQrIIguTHBwDCcIA+RhSTAQf5v9xlZaIIesgKCZACC5DJ8Su4iC1HQTTZjzDUH+b/oH9w+70GXuMNaAAAAAElFTkSuQmCC" alt="motarboard">Leadership roles and responsibilities</li>
+                    <li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEv0lEQVR4nO2Yf0wbZRjHX3Q63JJpjPtH49SNMdRk/0x66IjEBO7KgLuODDcxoi4bhjhGhrJ7y8LKzGQTKO8VRGzfqyi6uHX+yEqCYRo1cYkMF2O2qMn+cRtxbH+YGYdmGMZjnsMi0Bbacj0g8k2epLn2nvfzfZ/nee9SQha1qEUtaqr2Nb9zv8r0Nyjjv2LgZ7xG5ruoh29QGe+iTP+bajpMDFXTb6pM73a28I1kPsnlct2itvAiqvHPp0JHDaafUZm/zOVyLZk7cM/7K1RNr1IZvxAzeHhVLquM1+9x87stA6ct/tVU44dVjV9LFDzMCNOvU6Z79zL+cNLAVc2fTTU9QBkfMQucRpgTbEVsSQKQMmtolytwO9X0ElXjfcmCplHnhP9APbx8jztwR9zgTo9/JWW6Spk+YDm4FhZXsWVr2vR7ZwSnzb50VdM9KtP/nAfgMLm9+DAe0U6Nr59MDZBCW/y5eEZTxkcTSV6r+aCpvQHe45XQ8+4W+O5INlw8vgb+OrEMLhxPS8asnMLWLgkEbiUq41/EeuP+1nZo7aiDo/pO+LKrAM59uAGufHwfjASXAHSTiPFLYG3yKsP0k4Qy/v3ULw60tkJbRx0E/Nvh6658+PnYevjtk5Uw2p0SFTS026ePPAndndtA91VDY/shcGo8mQbOkEqPZyk+FVXGz+HF84FHokLiTuOO485jBbASWBGsjKUzwfh5fIi6vN5lYWd9CPbiR6uNXsaext5ubn8daj0+a0G18N6f8RkRMoCnEdX40FwC07E2uYGnz94W36MxPQNCBoyKHPbeabzvaPyS9eB8EN+Tqpu998QEHslASOVe720V9Y2VFfVNSQff9ZobKg+yfa7OztS4wKczgBJE+UVBUiD36TJ4oaYeVGbe6aJqOuyobQB76Q7ANXCthOCnN6B0GMn/jRzHM1C6m8KrTR0Jg9e434ay6v3wVPGz43kxbJL8lukGbJJyauIioXiioBg276yE3Qe1mMGrGlqhpOIVyC7cEpbPMCDK35htIEWQ5GuRFgtFlqTApufK4aW6Q1HBXz7gBmX7LsiyO6LmEYyQf8c1TTMgSMqD0y84OXJLnjfmpMbtNQI/47V4cjy+qfgB0wxk5SlF8Sw+sSoYidybKToKTTNgk4qciUDMJmxSkdM8A6LMrTeg+EysgPKZ9QbkHjMrcNZyA6J81sQKyFetN6BcMc2AIMnDVhsQJGXYRAPK6BwYGDXNwMbCklWCqGwV7EWNgqT0CpIylATgIUGUe401RGUrrhk/fF9GAfSlgRH96fnRfme325fiw80mysdsojwyi0EdsUnyUcyFORPa8UkG+jMGoD8DjDi97lIs9zwmyetskvKBIMo34wEXRLkrM9+RPmvocfivSCr0rb0+bqAv7Q+8Fuv9Qp4s2CT5pxkNiMqPWaLDZhp4SBAkDE4uH2ufb9cA9C7HWXCTOJSTk5OK7/LTwL+JvyHJEATJYIS/UhI6iwXRUTFxNsZaxlFOkimIZCBIBhPNlykqpcaQInyevI0kWxAkbREMtM0mpyDJVRjECkGQrIIguTHBwDCcIA+RhSTAQf5v9xlZaIIesgKCZACC5DJ8Su4iC1HQTTZjzDUH+b/oH9w+70GXuMNaAAAAAElFTkSuQmCC" alt="motarboard">Proudly representing the school</li>
+                    <li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEv0lEQVR4nO2Yf0wbZRjHX3Q63JJpjPtH49SNMdRk/0x66IjEBO7KgLuODDcxoi4bhjhGhrJ7y8LKzGQTKO8VRGzfqyi6uHX+yEqCYRo1cYkMF2O2qMn+cRtxbH+YGYdmGMZjnsMi0Bbacj0g8k2epLn2nvfzfZ/nee9SQha1qEUtaqr2Nb9zv8r0Nyjjv2LgZ7xG5ruoh29QGe+iTP+bajpMDFXTb6pM73a28I1kPsnlct2itvAiqvHPp0JHDaafUZm/zOVyLZk7cM/7K1RNr1IZvxAzeHhVLquM1+9x87stA6ct/tVU44dVjV9LFDzMCNOvU6Z79zL+cNLAVc2fTTU9QBkfMQucRpgTbEVsSQKQMmtolytwO9X0ElXjfcmCplHnhP9APbx8jztwR9zgTo9/JWW6Spk+YDm4FhZXsWVr2vR7ZwSnzb50VdM9KtP/nAfgMLm9+DAe0U6Nr59MDZBCW/y5eEZTxkcTSV6r+aCpvQHe45XQ8+4W+O5INlw8vgb+OrEMLhxPS8asnMLWLgkEbiUq41/EeuP+1nZo7aiDo/pO+LKrAM59uAGufHwfjASXAHSTiPFLYG3yKsP0k4Qy/v3ULw60tkJbRx0E/Nvh6658+PnYevjtk5Uw2p0SFTS026ePPAndndtA91VDY/shcGo8mQbOkEqPZyk+FVXGz+HF84FHokLiTuOO485jBbASWBGsjKUzwfh5fIi6vN5lYWd9CPbiR6uNXsaext5ubn8daj0+a0G18N6f8RkRMoCnEdX40FwC07E2uYGnz94W36MxPQNCBoyKHPbeabzvaPyS9eB8EN+Tqpu998QEHslASOVe720V9Y2VFfVNSQff9ZobKg+yfa7OztS4wKczgBJE+UVBUiD36TJ4oaYeVGbe6aJqOuyobQB76Q7ANXCthOCnN6B0GMn/jRzHM1C6m8KrTR0Jg9e434ay6v3wVPGz43kxbJL8lukGbJJyauIioXiioBg276yE3Qe1mMGrGlqhpOIVyC7cEpbPMCDK35htIEWQ5GuRFgtFlqTApufK4aW6Q1HBXz7gBmX7LsiyO6LmEYyQf8c1TTMgSMqD0y84OXJLnjfmpMbtNQI/47V4cjy+qfgB0wxk5SlF8Sw+sSoYidybKToKTTNgk4qciUDMJmxSkdM8A6LMrTeg+EysgPKZ9QbkHjMrcNZyA6J81sQKyFetN6BcMc2AIMnDVhsQJGXYRAPK6BwYGDXNwMbCklWCqGwV7EWNgqT0CpIylATgIUGUe401RGUrrhk/fF9GAfSlgRH96fnRfme325fiw80mysdsojwyi0EdsUnyUcyFORPa8UkG+jMGoD8DjDi97lIs9zwmyetskvKBIMo34wEXRLkrM9+RPmvocfivSCr0rb0+bqAv7Q+8Fuv9Qp4s2CT5pxkNiMqPWaLDZhp4SBAkDE4uH2ufb9cA9C7HWXCTOJSTk5OK7/LTwL+JvyHJEATJYIS/UhI6iwXRUTFxNsZaxlFOkimIZCBIBhPNlykqpcaQInyevI0kWxAkbREMtM0mpyDJVRjECkGQrIIguTHBwDCcIA+RhSTAQf5v9xlZaIIesgKCZACC5DJ8Su4iC1HQTTZjzDUH+b/oH9w+70GXuMNaAAAAAElFTkSuQmCC" alt="motarboard">Developing talents and unique abilities</li>
+                </ul>
+
+            </div>
+        </div>
+
+    </div>
+    <!-- END Grade 5 -->
+
+</div>
+   </div></div>
+<!-- ===== MIDDLE ===== -->
+<div id="middle" class="program-body">
+    <div class="philosophy-highlights">
+        <div>
+            <h2 style="color: #000000;">Building Stage Curriculum</h2>
+            <p style="line-height: 1.8;">At Shalom Matric Hr. Sec. School, the Middle School years mark a vital stage of academic and personal growth. Students strengthen their understanding of design thinking, analytical reasoning, and real-world problem-solving, preparing them for higher academic success and future career pathways.
+                 This phase nurtures confidence, innovation, and leadership qualities in every learner.</p>
+        </div>
+        <div class="highlight-bg">
+            <h2 style="color: #000000;">Key Focus Areas:</h2><br>
+            <ul class="highlight-list" style="color: #000000;">
+                <li>Mastery of Design Thinking Process</li>
+                <li>Developing Critical Thinking and Problem-Solving</li>
+                <li>Hands-On Real-World Project Work</li>
+                <li>Teamwork, Collaboration, and Communication Skills</li>
+                <li>Research, Data Collection, and Analysis </li>
+            </ul>
+        </div>
+    </div>
+
+    <h2 class="program-title middle">Subject Areas & Learning Approach</h2>
+    <div class="program-grid" data-animate="fade-in-down">
+        <div class="middleprogram-card">
+
+    <div class="program-icon-wrapper">
+       <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEHUlEQVR4nO2Y2U9TWRzH+ydYnSZtoSLGmJgY1HHJKCrl1HV88sEJtAE1zovLiz6gITozyagxAhaXIEYGlTaZGY2aKGAL1aJYF5iMBrcgkApUZV9UjMblZ87pvZe299z23uNtQpN+k08opy+f7+H3Ow9oNMkkk0wyySQTkqk51etMuVcCptyrEE61iNQwamDx0e5W5HgDYkZlMiJN1Ug3co6u1cSKKedKt1Jxnpk7bjeoLu4YJ7tquCt2AUZ5jr7ssyOf1BZHjmEBmQUUiwex1sCCQ23N8ZJH8gqwiQephfRfvb54iCOWAkrlMSnW2vdZfw2NxkMeyS3AIh7KnN9aGtUWR3ILyJevlcSUX/dAbXGEcQ7JLaD81kNGCPM181RPl1x5rbkIJmUdiSkvs0BscVRwC/jgz+Pi1wRm7Wryyr11bbQCnDh7AcqtH7nYJhTAnyPlCTaXH50b/hoprjUfJsLjFAsFJmWVcD957N9RIMq4PA+8FQq0vXwnluf4ye5/LB6XeBewRp9zfnxaA2+FIqigkVLABTO2376pZEkzCu8Qcd2aMjCf6RXJKyggvaQl3PiUXm4njI9RuDzGaHMNmc8NfqDJZp7ww7T8f2HeH/8Jv0+2lJICc39vosrLLBDtdblGbh5ndaGPgNP+6l2YeCjzDzy7J3XbWnMR/LDqGCy2t4FhfSUZobS8CxLygwTFBUIXNLugkQh39b2HVFvw7EXPGDmz7PZRC6Rt8VILIMcQpG+6QHZgCrn5EtD9XA7LTr+kijMViHxd+PEpr/ELZyer/eTMfqmdWsBodX9cXtE3SHsazZW9oFt9IrjIWSWQse9+VHnZBajPYsj40BIco1B5N5YnzC5suRn5puMlTcv7m3uFislfQGspDe4ERVx2ASl5fnyiZcUeX5g4T0p+/aNQ+cwyPxjWV5AdmGyxw49//g8zttYIz2j65kuwnIwSUwH6m86Pz9m6TtGYVLo7uZepQyTPs6Qs0MEXmLbxH26Bj8KioqfCuGTsvQdTVh4nJVJ+capZwCWMT87BZlGBDfubyXcdr8YkCtTBzJ1NXr7A0lNdYMp1QmbZC5Hg0vJOmJp3HhYcaon4boDAUEC8mLQ5lxIn2AgBs3PgS6wlRVQGWAq41JQnLCzueMgqjuQXUF+cZ/o23y1WcaROARnyNinqwWitf2Ou6h9jlUfsBdhvXZDnmLP/iY9FHLEVUE/cwJG6+UYzqzxy9ispoL48x+dlFa97lIojjpgFjLnu7jiJc3hg1u4HDUrFkbMfsh19sf+1qLe61xqoJb5fXCD/eiuLvKWqd41GrciR19vqn+k2evWaiRhjjFuf0PI40cZFb/NMbHmchJbHoS1pwsjjRL4uCSWPk9DyOAktj6O3ejwGq+eufkOtjhwko2HKNyBaP7r8Uw5EAAAAAElFTkSuQmCC" alt="language">
+    </div>
+
+    <h3 style="color: #000000;">Core Academics</h3><br>
+
+    <ul class="card-list" style="color: #000000;">
+        <li>Mathematics and Science Learning</li>
+        <li>English Language and Literature Skills</li>
+        <li>Social Studies, History, and Culture</li>
+        <li>Hindi and Tamil Language Development</li>
+    </ul>
+</div>
+
+        <div class="middleprogram-card">
+            <div class="program-icon-wrapper">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAADkElEQVR4nO2ZTUhUURTHx4q+aFkREUS1KGhTi6BFZAWSOedM1jiO9LFIy4qgdkFEGbQQNwnlpnZFGIokyHTvaIWSRRG1iYo+RMuP1PxIwiJq6B/3jY45Ob777rxnmzlw4D3ee/f8f/ecd9+5Mz5fxjKWsbQMzdlzIP3bIPkCJDdA0BtIHobgX5AUs44lv4UgCcEXEeUc9Yzvfxsa9yyF5HJI7oVkOPQBCKpAJG/Zf5pxPgPBowbCk5y+QtJJwJc1M+KbAssh6XH6wv/x22ighd6Kj/hXQ1CnB+Ixlo37qA3N9Ua8yF0CQe3eiedxiEr3xZeVzbJmx3PxDAj+jSiTuwCCj8+IeJnIQhtqQ7PdEd8cWgRB/drBm3cDL4NAZyHQHwY+h4GuQuB1MH5Nd5wo7XMHQPJpvYAMvAoCQ0XAcApX19Q9jVql9NwdAEHvtcS3h1ILT/aOkD2E4N8QuSvSnP3AWq3ZV+WhK37c1TN2497xH0kTgI7Z13xg+rKZrpxabN4JwTfSAxBUYwugajpZ3JcjcU+clwJfDhtkgZ6kCcDPbQHUajNJfCkQ+wjEuoGRY2PnnUDsw2Qo5T2FNhmgwXQBPtoC9CUDlACxdlgW+xQHsY574kB/3zsQ1lndzD9qkPzNNkBv4dQlFOuKC08l3gIo0vgmUBuas+ebZmDUcQmN+8ipCYCpxOuUkEz4OUMAjebtxd7UK824pbOUSisL39HIq5wDSHqotYwOGgI8cNBaSK43yUCF1uCq93EK8LbAiXjEVyV/njMAtfnWGVi1Eu8L9AFUc6fTD8lkAH7mMAO58yCoTxviXYE9gHrp7waci5eWd5uU0XlHQVRppAL4EAKihuIFDyFKQecADbQYgka0AzX91RslA7Tmm4h/iigdQm1ogWPxCQhJR50EXbfpypTuXDx9NRY9CQC+LAh+oBt449Zr2JxzHdl8CznBOtD+BgSLG00A2lwBsCAkr4egnzqBD5xomdINyqfVNQALQnCVTuBQcQSBgxHkhuuxI78GW3bdxM7AVZMXt85lgPw11lbPJvC9yhJszr6UqH11fL+y2ASgylUAC0Jyi07wzuowyF9ueVe1dtMGV5q4aQEEnTUUY5KBEvcBooHtMwYQydvgPkAkb+XMzD49cl184pc67wG61ILhCYAF4d4sqz6rHoI6IPlHfA9Ol9U/P56JdxPAU5HTWQZAZgAylrGM+SbsD9V+mpbJjX6IAAAAAElFTkSuQmCC" alt="innovation"></div>
+            <h3 style="color: #000000;">Innovation & Design </h3><br>
+             <ul class="card-list" style="color: #000000;">
+            <li> Hands-on Design Thinking Projects</li>
+            <li> STEM and Robotics Activities</li>
+            <li> Creative Innovation Lab Experiences</li>
+            <li> Prototype and Model Development</li>
+        </ul></div>
+
+        <div class="middleprogram-card">
+            <div class="program-icon-wrapper">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAD/ElEQVR4nO2WXWxTZRjHe2uMH8FVEwfJqVETopde7GJf78M5Tbf24HYx487ozmhPXbYIeDMWbRcIH9KtJUGg5cKPRAgQMmcwwzVTkx2IhHhFkDsujGCIiGxuPXZuoe1j3kJNOWvX855TNhr7T/7J2jzn/f9/b59kx2arqaaaVujVT1Ibubg2zsW0pCOuoVnT57m4NvHKiYXXbGtZ3hHTZq0UX+GYNrvxRKp+TQC4uDZe0fL/QSTPrQ1AzNralFynY/NoD6gmPJOsC8xM1PWrxtbwsdz+Q5sDUPMgsxv6f6ivYgCVQpyrbgBFna9ugICKNQBHDUCtTgDO9P8B9ckA2PTxreoF4I7O40vvX6k+AO74Qu7mK1XebhaAiyf32BhE310qVdhuFYC1fA5AufR6naLeW3cAzkT5vOiLF313sSszC+sCwFkoXwnZFXXYNMB6l18NwlZOjpi21/YEya6DWJNQQogTAKYBIAkACAAXKwVhe9wCgI8eln7EhJAbhJABqxA2VgmC8DQA7COEXCOEpKl5nt9cbJYQ0gwAWX15jwuwS4Q0/bu1tXXQbIY9MMO23g0NDU8RQn4qcqP3CSFnXS7Xs4XzADCRn3E5AfcOOPHikTZcnhTx9lk3BckAwGUrGZbXodO9BYd9Qv5zTDf/+7BfwOloG6a+ERETj/rysTa6SgtWMphECPmZHtLm3IL7B5145Xg73r/gweyUiEM+gf7Uv+jm0/rSetMZKxlMAoDFB7fpWVHk3riHlknp5lctT01nrGQwqVwhICRbOB97r3m5HEA80LxkJYNJu95pKbkS2YSISkfrcuH83OHGnZlv3SWfyVxwp+eijTusZDDpzmjT0cxke9GAzKQ7c+tQ0wH9M5jwnFrlRr+sRAaTMCHGipaZEk8WnZ9012NC/LXI/E38buvLlchgEn7f8QJOiVd1B1/H6c4XSz/T9dzSaQHT59tzXjrtxNXnO5gzmHQ9+vamvz8F/OekgKnPAM+Pbn2m1GzfSFSQQ2Nf/HW4EQstj0Q+3x4c4yuRYVj8u763+G7/127v9sU7kaZckZvhFhQkvyZI/jPCNt+b+dltwYijLxT5sW8kgtRfHfTh7SjgbxHAMweV3HfUcihySd5ziDOTwSRB8n/IS0pakBSkln1ePLCjC7v75Nxnal5SloXuwGBvKPyGHBr7M1+ynOWRyF1vKLyZJYOpPN+jfJA/oJydPYFsbzD8h9HyeXuD4bvOnoChDEFSsrzk8xoqD7399YLkXzQK0Dk4xFS80J0DQ0YBkJf8cy2y/Hz51elWhoweSt2ze79pAGn3PsM5D35tn6/8+kjKKZZD5WDYNEBvcJQJQJD8RwytUU01/Y/0LzBTyKDsVOK3AAAAAElFTkSuQmCC" alt="people-working-together"></div>
+            <h3 style="color: #000000;">Life Skills</h3><br>
+              <ul class="card-list" style="color: #000000;">
+            <li> Leadership Development and Communication Skills</li>
+            <li> Teamwork and Collaborative Learning</li>
+            <li> Effective Time Management Practices</li>
+            <li> Digital Literacy and Technology Skills</li>
+        </ul>
+        </div>
+    </div>
+<div class="design">
+    <!-- ===== 5 CARD BOX SECTION ===== -->
+    <h2 class="program-title middle" style="margin-bottom: 2px;">Design Thinking in Middle School</h2>
+    <p class="design-description">Students use the full design thinking process to tackle real-world community and environmental problems.</p>
+    <div class="five-card-grid" data-animate="fade-in-down">
+        <div class="focus-card" style="color: #000000;"><i class="fa-solid fa-hand-holding-heart colorful-icon"></i>Empathize
+            <p>Conduct user research and interviews to understand needs</p></div>
+        <div class="focus-card" style="color: #000000;"><img src="data:image/png;base64,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" alt="external-define-new-product-development-npd-flat-flat-geotatah">
+            Define <p>Frame and clarify the core problem or challenge</p></div>
+        <div class="focus-card" style="color: #000000;"><img width="64" height="64" src="https://img.icons8.com/external-flaticons-flat-flat-icons/64/external-ideas-home-based-business-flaticons-flat-flat-icons-2.png" alt="external-ideas-home-based-business-flaticons-flat-flat-icons-2"/>
+            Ideate<p>Brainstorm creative and innovative solutions </p></div>
+        <div class="focus-card" style="color: #000000;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFWUlEQVR4nO2dwW8bRRTG5x/okfbOAY5w6cGKVCzjRk1KEkOTgy+5xCVBgsREHHBUx0FUtIVD79SpLQFSe6cHo9pbYtoUDiBoS+JaHGBLwyHx7oyr9gDpoGetnXW9awWyu/PcfZ/0nSplZt6vM7P7nneGMRKJRCKRSCQSiUQikf6PTNMc5pxfEkJsCiEeCSFkyP2Ic77BOf/cNM3jgYHgnL/MOV9DEACJ2ZzzbznnL/kKQwjxmhDCUD1YMSA2TdMUQhzzbWYQDPGf3Wg0RKlUetUPIJrqwYkBdb1ev8cYO+wZDNik+jW4fvMXmc1ckm+9cUbGhtIyGpkPhWNDaXlq7Exr7Ldv3ekLJZfLrTDGDnkChHOed56Ohjx/9kvlgYki8aeffCUNw3QEUq1Wy4yx1z0BYj3a9jRCMOYdoTjFStf1PxljScbYES+ANJ2WKXtH3pwtyneubsmF8lOZ1mQ4XNmVc1e3ZGK20BULp+Wr0Wg8sYAc9QJITwOwbtphKA+OptaJt/egLGfyjrPEAnLSFyCwgbc7ADNDdUDSig0zpR2PyfFsPyBTvgCxP03B1FUdkLRqV3Y78YDY9AGS9AWIfc1UHgwNh+0xISCaehMQDZcJiIbLBETDZQKi4TIB0XBZKRB6D5G43kPoTV12ee7Kw/2+qSd9z2VBci3cs+OpTJy+vJfLWsoHD2T9Vne2F5JrkM8J1fJV2W3NDDsM8A+37wYPBAy5f9X1hygyf3bOuR4SCBCojhGU+S4YbhXDQIC0/f36nVYNADazsNXUJ8ezrbG7LVNKgJDFvkxABC4TEBFCILq+1fr1SVD7R2woLacmsvLcx1/I+v3fXfsFm2sxf03OTJ+X8WPv+9on+PvQDrSndFP/bu0nOTGypGxTHYl9INdu/OgI4725i0r69O7sRVcovgJ5oP8lE6PqYEQtj5/4UOp/POzqWyH/tdI+wUwJHIj9R3LDIysydbkezFt6ZVeeLvwmh0dXXH+cBstH+9+SuW/kwvV/fO0T/P3kcqnTZmr6QvBAYB3vdABgBJy2mFm975rMs+8ZfsPYg/J3p01oP3zp94p7utu+fATZJ3u7gQNRNej0PgJAQAiIJCAaAUEx6PQ+AhDKTR0zkNT0hb3H3uVSOB57MQMp5q+F78UQMxDDMFspDBUwIGWjJHWCGYiwJRdh+QgiuQjtFFcVJhexAxEITUAELhMQgcuhBmKErUCFGYgRxgIVZiCFMBaoMAOZCWOBCjOQOOWycAGJKupbv4cMAhIhIAQkQkAkARkAIHHa1HEBSVGBCheQIhWocAExqECFC4igAhU+IAKhCYjAZQIicDnUQAwqUOEBYlCBCheQAhWocAGZoQIVLiBxymXhAhJV1Ld+DxkEJEJACEhEIRDVH30ulOmjT9fPouG78aCBpFZrnfanJpZDt6n3XOgCZ420OwAf8cN340EdHJBarcnjJ3KuBwdgLFDt7Ow89hJIz5VHcPALnDWi8gUsCmc9ji61jvnAXqDSdf2BZ0CsK1Z7Glm7ofbwmcTokrxZ/bmnXxgLVNVq9boFY/LAQJrNZtwJCBj+d8KSEeTxTJPj2Vabz84MzAWqTCZz1rMrj6xZUnEbPFn09ebm5q+25ergl4KBTNN80TCMHdWDEwPm7e3t5tjYWNoG5ODX5rUFF+3C3a6qBykGCMbi4uJHNhjeXCxpV7lcfqVWq91VPViB3BsbG/eemRmnPLt61UGH4W5XuE4UHufg0kTVARCKDTGAWEBMbBu4HcYLzGcdsqagvWEy63HMz5nhpCPWk8NJ69LEZMg9ZcXiqKcbOIlEIpFIJBKJxJ4b/QvD3IhbGEVgHgAAAABJRU5ErkJggg==" alt="prototype">
+            Prototype<p>Develop, build, and refine models or concepts</p></div>
+        <div class="focus-card" style="color: #000000;"><img width="64" height="64" src="https://img.icons8.com/arcade/64/test-passed.png" alt="test-passed"/>
+            Test<p>Validate, analyze feedback, and improve solutions </p></div>
+    </div>
+</div>
+
+ <!-- ===== 2x2 CARD BOX SECTION ===== -->
+<h2 class="program-title middle">What Makes Our Middle School Unique</h2><br>
+<div class="two-by-two-grid" data-animate="fade-in-down">
+
+<div class="card-wrapper">
+    <h3 class="card-heading" style="font-size: 30px;">
+        <i class="fa-solid fa-diagram-project"></i>
+        Project-Based Learning
+    </h3>
+
+    <div class="extra-card" style="color:#000000;">
+        <p>
+           Students engage in hands-on interdisciplinary projects that connect multiple subjects and apply knowledge to real-world challenges. 
+           Each project follows the design thinking framework, from identifying problems to testing practical solutions
+        </p>
+
+        <ul class="card-list" style="color:#000000;">
+            <li>Community-focused impact projects.</li>
+            <li>Science, technology, and innovation initiatives.</li>
+            <li>Social entrepreneurship and problem-solving challenges.</li>
+        </ul>
+    </div>
+</div>
+<div class="card-wrapper">
+        <h3 class="card-heading" style="font-size: 30px;">
+            <i class="fa-solid fa-lightbulb"></i> 
+            Innovation Labs</h3>
+            <div class="extra-card">
+        <p style="color:#000000;">
+            Students have access to modern labs and makerspaces, including robotics, digital learning tools,
+             and creative technology resources, enabling hands-on experimentation and innovation
+        </p>
+        <ul class="card-list" style="color:#000000;">
+            <li> Robotics and coding programs</li>
+            <li> 3D design, modeling, and printing</li>
+            <li> IoT, electronics, and engineering projects</li>
+        </ul>
+    </div>
+    </div>
+
+    <div class="card-wrapper" data-animate="fade-in-down">
+        <h3 class="card-heading" style="font-size: 30px;">
+            <i class="fa-solid fa-user-graduate"></i> 
+            Personalized Support</h3>
+            <div class="extra-card">
+        <p style="color:#000000;">
+          With small class sizes and a 10:1 student-teacher ratio, 
+          each student receives individual attention and guidance tailored to their learning needs.
+        </p>
+        <ul class="card-list" style="color:#000000;">
+            <li> Dedicated teacher mentors</li>
+            <li> Regular student progress assessments</li>
+            <li> Active parent-teacher collaboration</li>
+        </ul>
+    </div></div>
+
+    <div class="card-wrapper" data-animate="fade-in-down">
+        <h3 class="card-heading" style="font-size: 30px;">
+            <i class="fa-solid fa-earth-asia"></i>
+             Global Exposure</h3>
+             <div class="extra-card">
+        <p style="color:#000000;">
+           Students are prepared for a connected, globalized world through international collaborations,
+            competitions, and cross-cultural experiences, broadening their knowledge and perspectives.
+        </p>
+        <ul class="card-list" style="color:#000000;">
+            <li>Virtual student exchange programs</li>
+            <li>National and international competitions</li>
+            <li>Cultural awareness and global learning initiatives </li>
+        </ul>
+    </div>
+    </div>
+</div>
+</div>
+<!-- ===== SECONDARY ===== -->
+<div id="secondary" class="program-body">
+    
+    <div class="philosophy-highlights">
+        <div>
+            <h2>Excellence Stage Curriculum :</h2><br>
+            <p style="line-height: 1.8;">Grades 9 to 12 at Shalom Matric Hr. Sec. School focus on academic excellence, CBSE board exam preparation, and university readiness. Students receive comprehensive guidance for Class X & XII exams,
+                 competitive entrance tests, and applications to top national and international universities.</p>
+        </div>
+        <div class="highlight-bg">
+            <h2 style="color:#000000;">Excellence Stage Objectives</h2><br>
+            <ul class="highlight-list" style="color:#000000;">
+                <li>CBSE Board Exam Success (Class X & XII)</li>
+                <li>University Admission Guidance and Support</li>
+                <li>Advanced Research and Innovation Projects</li>
+                <li>Entrepreneurship and Leadership Skill Development</li>
+                <li>SAT, TOEFL, and Competitive Test Preparation</li>
+            </ul>
+        </div>
+    </div>
+
+    <h2 class="program-title secondary">Choose Youor Stream (Grades 11-12)</h2>
+    <div class="program-grid" data-animate="fade-in-down">
+        <div class="program-card">
+    <div class="icon-circle history">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEBklEQVR4nO2Yb2gbZRzHH5041yoiE/St72RvfCEoKCJsTpsNfaWJylbKcIqoCPPN3shqt3YR6T3XOMfa2f1Dt7WouwtO6V3WzPRf7iImsXUrZWlnm1ZEXafPZfc8ubKfPBfaJWka1jayu5kP/N6E3N3ne7/n+T1wCFX5n0MEqYVgySBYakZuxBBkYmAZDCz/g9wIwVIzD0EEed+tdqlSxQkYgrSVYClNBHnKwEEPchvEFrenEhAsTyK3QdwewMBBDw/B5Y1Wue5W+1RxNFSNb6VKIk2V+BQNJd03cSgXVxOQq/jkbRUA9nTfTbD0McHyDBHkaSJIfv4bchI0lPTkQsQnTTVRMHG48Pw4XRirguRHboFgeWZRACz9htwCEeTpEgHSyC2QUksIy/uRWwC+iQXJn9vADt3EtxXBaajpuWRtVNOwHrkNNQ3r1VR2Qh23QEllZ0OX6QbkJnpSc9u4fF4dRE7nkwTUCrr5HNZY45Fk9qeCACnrInKysKgxVdQoE3UGvAI6AyUvgJLKXg9PwMPz11IlMUDVeJ9jhEtVcKxgCYEyPuddCKDG+6gSjzhKuLhOjWSLAlifOVq4uDoTRQFS1i8VFT4wAvdyYVFnflGj/asVLq5PY4v3QSgFD1VMGGs0WynZg72zcLT7MnS1JyHYEoHQB99C/46TEA7PFHRhuKknsGxxUWOv2MI6nVuO1IE+Ah1nf4cvTozCmdYonG08B+F3vwHN9zkMb2qF1GMfwvQju+BqbQNkkK9kjeyWiwJ8DxnkbQf07F03J6+ztoK29htLSiW3BGDsiSZbava+HUtKlSuy5nX49dHdMFh/wr7/sSgpCBDpTVP+PwP5goDq1paVF2L0ZVt6IAPR146sWKpc/b12O1x6vBEiO09D16GE/YLyX1ggxiy+9m/sA0byru8sGwBrdIDfhMtXTPieertLP7zVDV0dPy8SFnVqYZ0OYZ3tb9PMOr7v1HHrcN6J3GEg3/WFjqFXN5cLQPlNr9z/xoqFr66rh7En98L5t7+C04eH7W7mC+cGAR0UNdaCNfMFLlzs0Q2wpidlvRiasDx7AO7MD5BB3u9KygPAHVijGf6Qvx7YefPCNQ0w+lQzhN/5Gk51jkBg6NoiYd5ZrLHmtqj5PD870DIxCgL4Zst14Ly9hLYdW1q4tgEuPt0Cve+dgZNHL5QUts8Ine0TY+bmlQgXYyDv5PzzDeSdQkuBdfqSvZEGr8HQ9uPwx4Nv2t248Iwfzr0vwZfHR6EtahauYY0yrNE+UWd7+ZnR/iPUoApjIJ+Hh8iVr/zXO97qsvPePn1pBOusSdTMTf+F8KoRY3QL1piCdfon1ukVLixq7CMham5sHYR1q39ClSpVqqAb/AsZGCfntSpMGQAAAABJRU5ErkJggg==" alt="chemical-test">
+    </div>
+    <h3 style="color:#000000;">Science Stream</h3>
+    <p style="color:#000000;"> Physics, Chemistry, Mathematics/Biology, and Computer Science.</p>
+    <ul style="color:#000000;">
+        <li>Engineering exam and entrance preparation</li>
+        <li>Medical entrance coaching and guidance</li>
+        <li>Research projects and scientific exploration</li>
+        <li>Hands-on, lab-based experiential learning</li>
+    </ul>
+</div>
+
+<div class="program-card">
+    <div class="icon-circle maths">
+       <img src="data:image/png;base64,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" alt="calculator">
+    </div>
+    <h3 style="color:#000000;">Commerce Stream</h3>
+    <p style="color:#000000;">Accountancy, Business Studies, Economics, and Mathematics.</p>
+    <ul style="color:#000000;">
+        <li>CA/CS exam preparation support</li>
+        <li>Business management and entrepreneurship skills</li>
+        <li>Financial literacy and investment basics</li>
+        <li>Startup incubation and innovation projects</li>
+    </ul>
+</div>
+
+<div class="program-card">
+    <div class="icon-circle senior">
+       <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAACtklEQVR4nO2ZzW8SQRiH59JLozejRhOTNrH/gBdre5CbEepVD6YxpemJcvNuPMtVvfRT05amMUoTE2ZAIUC9cCtYkZ2haqDSmKCVAjt7eM1QIBu6tCils5j9JXOBJXme4d3ZeWcRsmLFyl/F456IedxO6MZ44p6Iom6nW/Ce2ui6gJilrglMOyPoNDPtsMFJDCQrvS9gt0U7hXfZbadbNvr4qTZGmAadDKxot6UJEMq9nQoQxpekCWDKtzsWoBqTKVDuuIQoL0sTIIznT6CE8r19D1DulSaAM/y6gAil8qDOngd4jtoafOYchFI7VQG/wkeQzBDK/QJkM7bQtsDmxmJ99v1Idvzb5QHM+J4Ayq4/OBY+57tfhy9ipXIVmSGYqpMCKqj8hl9L11rCi+/ENQerjzqJzBTCtKcCLJzKwf6LoUPwpYVBCG99O4Bn2gwyW+Jx6MOMEwEYTXyGytylBnxl/jJEk+kaPCfiWmTG+LLQTxgPViWSaSgtDkB5/grEEp/qy2YkugVnkZnjExIZLSSAI0kFIh9prea1jfcJOIPMHl8W+jHVwgYPrQ89MfuY8nd16J/Lw1BYGdFLRE0rEY9DH2E8oJ/1wsoNKHhHm/c+AVPexIRqz9regZptGSWMTxmBGpSQ/p+YQmYI+VIerG8lmodxCTV2oUVCK0Oy+RFmHP9zM8M4lgpPMnz4iEYFMv6H8PWtCwJUPaofGJUnwPiqEVSQ7sP3N3cbW4md1/eqn7UQXZUpsGsEv/vqzqHN3I+1WxBUiuZqKXFTU38AP9ZyOy3EArRkoqaeakwPk/ONH9vQZNfHm58JijQBTPlyHUQJPGq7pVQCj/Ur0UtpAoRqjmrppPdAnb3QtoA6d7H6GyL7aNHluBnr+HTabuv+W5n/93jd0YMCHusln9N6yWfFihXUyB9w45WKc/hLewAAAABJRU5ErkJggg==" alt="hourglass">
+    </div>
+    <h3 style="color:#000000;">Humanities Stream</h3>
+    <p style="color:#000000;">History, Political Science, Economics, and Psychology.</p>
+    <ul style="color:#000000;">
+        <li>Civil services and government exam coaching</li>
+        <li>Law entrance exam guidance</li>
+        <li>Social sciences research opportunities</li>
+        <li>Critical thinking and analytical skills development</li>
+    </ul>
+</div></div>
+
+       
+    <!-- Our Board Results Section -->
+    <h2 class="program-title secondary">Our Board Results Speak for Themselves</h2>
+
+    <!-- 1x1 Cards (2 Cards) -->
+    <div class="board-results-grid" data-animate="fade-in-down">
+        <div class="result-card large-card card-blue">
+            <h1>100%</h1>
+            <h3 style="color:#000000;">Class X – 100% Pass Rate </h3>
+            <p style="color:#000000;">Shalom Matric Hr. Sec. School has maintained a consistent 100% pass rate in CBSE Class X exams over the last three years.</p>
+              <p>2023–24: 53 students | 2022–23: 40 students | 2021–22: 30 students.</p>
+        </div>
+        <div class="result-card large-card card-purple">
+            <h1>100%</h1>
+            <h3 style="color:#000000;">Class XII – 100% Pass Rate </h3>
+            <p style="color:#000000;">Our Class XII students achieve excellent academic results across Science, Commerce, and Humanities streams.</p>
+            <p style="color:#000000;">2023–24: 37 students | 2022–23: 49 students | 2021–22: 42 students </p>
+        </div>
+    </div>
+    <!-- 4 Inline Cards -->
+     <h2 class="program-title secondary">Comprehensive Support for Success </h2>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+    <div class="inline-results" data-animate="fade-in-down">
+        <div class="result-card">
+    <div class="icon-circle purple">
+       <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAAElUlEQVR4nO2bXWwUVRTHD1afhO6jTxCDURITaGFmWbGtkHYpRUgkgTS+GBN9UAO1yEIiEVITfNEURaU2cWZ8UEOLYshiDJpupTNtoLTaj1SsobTBFkoIbtdOiXFR9pgzzm5ndrvttt29M52dk/yTdudj7/937z337OQOgBvs49MNbWUipzQLvHxT4OWowMk3BE5ukrj2UnBy1G2+8KDAK40ir2A6CZzcQOeBE0OYw7wRAjgtRK/8TCbmpyEoJeCkEDml2WSQl6+LXqXi83U/PCzx7X6Rl383Q5BPgZNC4OWbJoNepcJ0nGvbmjQNboCTQuTle0aDJ5+8sNx0/OmOFUkj4B4s5RA5eQf1Yro5TsN+thFgEqeMSXz7dlhKIXLK2KxJjpevk2kaCSInV6bmgJSkOAp2ileuTT5eM6S27r+m/hUYmUKjXh+eyjjbz0e+vokUbeydUH194bN8/501TM2/MayqycbjeumqygzANIjwBD8QXskEQM2Q2prOPGnbLxHmAHR9xQTA/hmGfVx7Bv/UGvPh1ktZNX+i8lImACaZAAjoZlsjUYzGYhiKRPHVIVXr+Xhj9nwxmjUIZH73l6OZAECmAP6NoRb/xBBL+uduHAsxBWAMq427APpcAJgXAGoPX8HGkg7cVzeYfwBeO/ZbYmVoLO2wF4DiznEslEK4rP5rhPdOz0t0jUdswfWd4yYze+sGtd6uOfIrvvDJCAre6aXxwKEr9loGC6XQvI0nyyO1mMyQ+cSPIW974u+3X+zBTT+HrQcQikTx7/sxbIlEseD9M4sGQPcwmjl4YCClKHp3VxeWdf5hjyQYMIiGcLZHQEl3WDMcN/+R/yJW/HjbPqtAwCDKAWRgwTlACqXkAFLl+Vt4/NnLeHxHJ27/LvW4bQD4bFADWAagdjjPAbx8Vc1vAFWGn8F5VQkGRqawenCSmXnbVIK1w/8Pe2PPW1kJ8hfHcP33A1j07U9sAPhmIG9VJci1DWFRsDshywAUWFAJUs8bzVsKwGNBJagNe7sAKLagEqQ5bxsAPguUbN4FEHQYgM+OCXi3vBpPHW3ATT1hTc1HTmqfSe9Izgdwt7wa75c+pyl4qB7PHaxP/K/6n3c+gNNvfZwwnKymow32AlCcg0rwqd4wnjn8QYp5Ggk0HWwFoDAHlSAB+ObNE0sDQEEOKkFKeEtmCnhyUAkakyD1uq2TYHEOKsH4MtiUr8ugbw65AIIuAHQBBPMUgPfyuLMA8IbnejMZy1RMAGzUdmdmz3zyc72Fq0tlAsDXFz6bzZ7PjvluXHeuJ8gEAN9/Zw1tTc0GgJme6y3IfLArUnS+91EmAChoXy5tTaXdmYvK5Iuc80XBrinqeabm3XAjJR4CAA8APAIAqwDgCQBYCwBeAKCXIcsAYAsAlAMAvSmyDQCqAGCnrir9M79+zhb9mlL9Hmv1e67Sv8Ojf6dlsQIAHqMVUW/0Tovk19tAbTG9g5SreIDyn4WG5xKvtzGvASwDBrEcAFbr89PKKVCht2E1qykAaWK2JEivwFJC26wnOGp0uiRIx+gcOpeuoWtzmgT/A0nd1CVf5e+jAAAAAElFTkSuQmCC" alt="test-partial-passed">                                                                                           
+    </div>
+    <h4 style="color:#000000;"> Board Exam Coaching</h4>
+    <p style="color:#000000;">Focused and intensive preparation for CBSE Class X & XII board exams to ensure academic success.</p>
+</div>
+
+<div class="result-card">
+    <div class="icon-circle pink"> 
+       <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEwUlEQVR4nO1aS28bVRQehFiwY8eCNX+ALtnxFxCrSixhMWOnSYrSEijFbSJC5uZR8wqN5o7H9kTEdUIjFFSBE/J2HTU82pA4oS2QSFCiYMeVkGIkDjpj38nYnrET13bG4/mkT7q+jzPnfPfcc2+kcJwLFy5cuGg8BnjpJcJLa0hsc62C8dfGnya81EV46ZAIFDTy9F9RoB+MvDHyDOdk9HmlF0VBWmaB3+oKaGS/cQzncE4EEeTXRYE+xkA/81LYeDcImSthjduXQvB5m5wTgZf+EXmpDTh4inMChrzXnxd5OsV2efJ8APZ8IT14xn1fGKbfMmQDL90ib8ovcM0MwtNXiUD3MCC/h8Ja99GuW/HH7iB87NWzISV66Fmu2TDYRp8TeRpkuzneIcOf7xcG+vBSCORzMsjtMjx4rzAjcC6uOcoGGkSbXDNgQKAviwK9j44PeygsX1Qg4zsK7sAXhoULCgyxG0CgMCjI8G2XAmnDPOSd7iAMe3Qhfu8XpFc4u4K0jz8rCtKgKEj/ocPBdhl2Lhfu7O7lkNavBeShEFO/0YhtqzU7hjVoG7+B3+LsBpGXVtDJAYHC3AUF0lcMgfjCcPtt3M1coCPdKty/swbZ1AON2MY+ljXxoqxBW2hzwHBdcnYDyTuHZ7vcef7q+jQ8/mNLD54R+3CMzfuiM2BaN9g4ZzeQvGNWFf2j80G4OxcvCbyYG4sJ+KQrF2ju5lAKbDaFAPtFd3pk6EtI/bahBZjeScJ8ZAYCPRG41q5oVHoiWt/BbjI/ZxOi/ikwezvYXoBtw6tu+FwAEtPzkP07t7s/L94Gf4eiB1FMf6cCG0sJPRt+ml2Ba/n5n3oprL8TtL8AxMC9X9b1YDB4Vu1l8jXEZrZgdf0vjdjGPq2IeuQCEdCGmW3ObiB6haZZ1mZBYNqznZ8Mx2EtuW/KyVBcrxfsOCDNbHN2AxGkWZGnP4he+UyxAHi+2c4bAx69ehNGe6cK+lgmLERnSgXwymdEQfoev8XZGaRIgMDViPYbU90YLJtn7IvFklofFsZiAbhmASkSgBWy1XuPTAVAskxI3HuUK4gdinME8FsIMNpzs0SA1bt5ATodJECgx/wImFE/Ar03nCPAwg3zImjGgJh7Di9GZ50jwMFuUktp7RoMlbsGV8peg/V1mqdLVi+0alnwxl9KaI8c/SEUS2o1AYlttvM4Z3P56CFkFKCGXLDcNVInAZgIuLtW83Fs0/AKrKMApdlELJyuhuVsYWrjIweLHF6PeENgG/uMaX9ce9X6VlcB1A+jMNY/URNbpyqA2hfVFxQHVG7MVJQK88uN19K3Ewkw1j9haajcmBkrzS83XkvfGnME+hxyBLI2cPhUBVCf8Jwdd77jagA5oS3H1QDilCOQbXUBVLcGTLg1INvKRyDb6gKodaoBlejIGkBO+Pe642oAyfdV+h+h4wrQkCOQbXUB1BrWgFoL0LQ1IFMjAdwakHJrALg1QKhDDTjc34bMr3FIJ2ch1DumLwj1qpDanNFZboz1m/UdV4BK9k7iG8aSeRiHw71kZQHSW3MFxqphIwSohumt7yoLkHrCj9hZAKMtSwFIi7BEAJGXFk/bqUZR5Ol8iQAuXLhw4YJrPfwPpzS3GO5I/ZYAAAAASUVORK5CYII=" alt="university-campus">
+    </div>
+    <h4 style="color:#000000;">University Counseling</h4>
+    <p style="color:#000000;">Comprehensive college application support, career guidance, and essay assistance for higher education admissions.</p>
+</div>
+
+<div class="result-card">
+    <div class="icon-circle blue">
+       <img src="data:image/png;base64,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" alt="language-skill">
+    </div>
+    <h4 style="color:#000000;">SAT / TOEFL Coaching</h4>
+    <p style="color:#000000;">Preparation for SAT, TOEFL, and other standardized tests to support applications to top international universities.</p>
+</div>
+<div class="result-card">
+    <div class="icon-circle yellow">
+     <img src="data:ima ge/png;base64,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" alt="project-management--v1">
+    </div>
+    <h4 style="color:#000000;">Innovation Projects</h4>
+    <p style="color:#000000;">Hands-on real-world research, entrepreneurship, and startup incubation opportunities for creative problem-solving and innovation skills.</p>
+</div>
+</div>
+</div> 
+</section><br>
+
+
+
+     <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3>Contact Information</h3>
+                <p><i class="fas fa-phone"></i> 044 2275 0923</p>
+                <p><i class="fas fa-envelope"></i>shalomhss@gmail.com</p>
+                <p><i class="fas fa-clock"></i> Mon - Sat: 8:00 AM - 4:00 PM</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="Index.html">Home</a></li>
+                    <li><a href="Aboutus.html">About Us</a></li>
+                    <li><a href="Admission.html">Admission</a></li>
+                    <li><a href="Gallery.html">Gallery</a></li>
+                    <li><a href="Facilities.html">Facilities</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h3>Location</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.3026060380066!2d80.08342499999999!3d12.888253200000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52f6093b5ba6db%3A0x10ee919ae0949272!2sShalom%20Matriculation%20Higher%20Secondary%20School!5e0!3m2!1sen!2sin!4v1771575203605!5m2!1sen!2sin" width="150%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+         <div class="footer-bottom">
+    <div class="footer-bottom-content">
+        <p class="footer-left">
+            © 2026 Shalom Matriculation Higher Secondary School. All Rights Reserved.
+        </p>
+        <p class="footer-right">
+            Developed by 
+            <a href="https://techfrenz.in" target="_blank">TechFrenz </a>
+            <a href="https://softwaredevelopmentandgraphicdesign.tech/" target="_blank">/ SDGD</a>
+        </p>
+    </div>
+</div>
+    </footer>
+
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Chat Widget -->
+    <div class="chat-widget" id="chatWidget">
+        <i class="fas fa-comments"></i>
+    </div>
+    
+    <div class="chat-popup" id="chatPopup">
+        <div class="social-links">
+            <a href="#" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="#" title="Facebook Messenger"><i class="fab fa-facebook-messenger"></i></a>
+            <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="shalomhss@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+    </div>
+
+<!-- Bottom Mobile Navigation -->
+ <div class="bottom-nav">
+    <a href="Index.html">
+        <i class="fas fa-home"></i>
+        <span>Home</span>
+    </a>
+
+     <a href="Aboutus.html">
+        <i class="fas fa-info-circle"></i>
+        <span>About Us</span>
+    </a>
+
+    <a href="Admission.html">
+        <i class="fas fa-user-plus"></i>
+        <span>Admission</span>
+    </a>
+
+    <a href="Facilities.html">
+        <i class="fas fa-building"></i>
+        <span>Facilities</span>
+    </a>
+
+    <a href="Gallery.html">
+        <i class="fas fa-image"></i>
+        <span>Gallery</span>
+    </a>
+
+    <a href="Index.html#contact">
+        <i class="fas fa-phone"></i>
+        <span>Contact</span>
+    </a>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="./Assets/JS/Script.js"></script>
+</body>
+</html>

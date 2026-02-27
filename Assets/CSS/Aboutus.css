@@ -1334,5 +1334,40 @@ body:not([data-theme]) .moon-icon {
     text-shadow: 0 0 8px rgba(245, 158, 11, 0.8);
 }
 
+/* ============================= */
+/* RESPONSIVE DESIGN             */
+/* ============================= */
+
+/* Tablet (2 cards per row) */
+@media (max-width: 1024px) {
+    .management-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    .management-card {
+        width: 100%; /* Let grid control width */
+    }
+}
+
+/* Mobile (1 card per row) */
+@media (max-width: 600px) {
+    .management-grid {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1.2rem;
+    }
+
+    .management-card {
+        width: 100%;
+    }
+
+    .management-card h3 {
+        font-size: 0.95rem;
+    }
+
+    .designation {
+        font-size: 0.8rem;
+    }
+}
 
 /* Remove conflicting hamburger.open styles */

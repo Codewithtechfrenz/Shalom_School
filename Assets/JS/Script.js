@@ -10,7 +10,7 @@ if (typeof particlesJS !== 'undefined') {
                 }
             },
             color: {
-                value: '#4f46e5'
+                value: '#ff69b4' /* pink */
             },
             shape: {
                 type: 'circle'
@@ -26,7 +26,7 @@ if (typeof particlesJS !== 'undefined') {
             line_linked: {
                 enable: true,
                 distance: 150,
-                color: '#7c3aed',
+                color: '#ff69b4', /* match pink particles */
                 opacity: 0.4,
                 width: 1
             },
@@ -65,22 +65,23 @@ const currentTheme = localStorage.getItem('theme') || 'light';
 // Set initial theme
 document.documentElement.setAttribute('data-theme', currentTheme);
 
-themeToggle?.addEventListener('click', function() {
+themeToggle?.addEventListener('click', function () {
     const theme = document.documentElement.getAttribute('data-theme');
     const newTheme = theme === 'light' ? 'dark' : 'light';
-    
+
     document.documentElement.setAttribute('data-theme', newTheme);
     localStorage.setItem('theme', newTheme);
-    
+
     // Update particles color based on theme
     updateParticlesTheme(newTheme);
 });
 
 function updateParticlesTheme(theme) {
     if (typeof pJSDom !== 'undefined' && pJSDom[0]) {
-        const particleColor = theme === 'dark' ? '#60a5fa' : '#4f46e5';
-        const lineColor = theme === 'dark' ? '#a78bfa' : '#7c3aed';
-        
+        /* always pink regardless of theme */
+        const particleColor = '#ff69b4';
+        const lineColor = '#ff69b4';
+
         pJSDom[0].pJS.particles.color.value = particleColor;
         pJSDom[0].pJS.particles.line_linked.color = lineColor;
         pJSDom[0].pJS.fn.particlesRefresh();
@@ -215,7 +216,7 @@ function dragStart(e) {
 function drag(e) {
     if (isDragging) {
         e.preventDefault();
-        
+
         if (e.type === 'touchmove') {
             currentX = e.touches[0].clientX - initialX;
             currentY = e.touches[0].clientY - initialY;
@@ -228,7 +229,7 @@ function drag(e) {
         yOffset = currentY;
 
         setTranslate(currentX, currentY, chatWidget);
-        
+
         // Keep popup positioned relative to widget
         if (chatPopup) {
             chatPopup.style.transform = `translate(${currentX}px, ${currentY}px)`;
@@ -239,7 +240,7 @@ function drag(e) {
 function dragEnd(e) {
     initialX = currentX;
     initialY = currentY;
-    
+
     setTimeout(() => {
         isDragging = false;
     }, 100);
@@ -263,13 +264,13 @@ const enquiryForm = document.querySelector('.enquiry-form');
 
 enquiryForm?.addEventListener('submit', (e) => {
     e.preventDefault();
-    
+
     // Get form data
     const formData = new FormData(e.target);
-    
+
     // Show success message
     alert('Thank you for your enquiry! We will get back to you soon.');
-    
+
     // Reset form
     e.target.reset();
 });
@@ -278,11 +279,11 @@ enquiryForm?.addEventListener('submit', (e) => {
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         const href = this.getAttribute('href');
-        
+
         // Only prevent default for anchor links
         if (href !== '#' && href.startsWith('#')) {
             e.preventDefault();
-            
+
             const target = document.querySelector(href);
             if (target) {
                 const headerOffset = 100;
@@ -315,21 +316,21 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 // ========== ACADEMICS PAGE - SIDE MENU TABS ==========
 document.addEventListener("DOMContentLoaded", function () {
 
-    function showSection(id, card){
-        document.querySelectorAll('.program-body').forEach(s => 
+    function showSection(id, card) {
+        document.querySelectorAll('.program-body').forEach(s =>
             s.classList.remove('active')
         );
 
-        document.querySelectorAll('.service-card').forEach(c => 
+        document.querySelectorAll('.service-card').forEach(c =>
             c.classList.remove('active')
         );
 
         const section = document.getElementById(id);
-        if(section){
+        if (section) {
             section.classList.add('active');
         }
 
-        if(card){
+        if (card) {
             card.classList.add('active');
         }
     }
@@ -420,7 +421,7 @@ const faqItems = document.querySelectorAll('.faq-item');
 
 faqItems.forEach(item => {
     const question = item.querySelector('.faq-question');
-    
+
     question?.addEventListener('click', () => {
         // Close all other FAQs
         faqItems.forEach(otherItem => {
@@ -428,7 +429,7 @@ faqItems.forEach(item => {
                 otherItem.classList.remove('active');
             }
         });
-        
+
         // Toggle current FAQ
         item.classList.toggle('active');
     });
@@ -440,21 +441,21 @@ faqItems.forEach(item => {
 // ========== GALLERY TABS ==========
 const tabBtns = document.querySelectorAll('.tab-btn');
 const tabContents = document.querySelectorAll('.tab-content');
- 
+
 tabBtns.forEach(btn => {
     btn.addEventListener('click', () => {
         const target = btn.getAttribute('data-tab');
-       
+
         // Remove active class from all
         tabBtns.forEach(b => b.classList.remove('active'));
         tabContents.forEach(tc => tc.classList.remove('active'));
-       
+
         // Add active class to clicked
         btn.classList.add('active');
         document.getElementById(target)?.classList.add('active');
     });
 });
- 
+
 
 
 
@@ -463,11 +464,11 @@ tabBtns.forEach(btn => {
 const cards = document.querySelectorAll('.glass-card, .academic-card, .step-card, .facility-card, .blog-card, .process-card, .vision-card, .mission-card, .management-card');
 
 cards.forEach(card => {
-    card.addEventListener('mouseenter', function() {
+    card.addEventListener('mouseenter', function () {
         this.style.transform = 'translateY(-10px) scale(1.02)';
     });
-    
-    card.addEventListener('mouseleave', function() {
+
+    card.addEventListener('mouseleave', function () {
         this.style.transform = 'translateY(0) scale(1)';
     });
 });
@@ -476,18 +477,18 @@ cards.forEach(card => {
 window.addEventListener('scroll', () => {
     const sections = document.querySelectorAll('section[id]');
     const navLinks = document.querySelectorAll('.nav-link');
-    
+
     let current = '';
-    
+
     sections.forEach(section => {
         const sectionTop = section.offsetTop;
         const sectionHeight = section.clientHeight;
-        
+
         if (window.pageYOffset >= sectionTop - 200) {
             current = section.getAttribute('id');
         }
     });
-    
+
     navLinks.forEach(link => {
         link.classList.remove('active');
         if (link.getAttribute('href') === `#${current}`) {
@@ -527,7 +528,7 @@ let lastScroll = 0;
 
 window.addEventListener('scroll', () => {
     const currentScroll = window.pageYOffset;
-    
+
     if (currentScroll > 100) {
         header?.style.setProperty('background', 'rgba(255, 255, 255, 0.95)');
         header?.style.setProperty('box-shadow', '0 10px 40px rgba(0, 0, 0, 0.15)');
@@ -535,21 +536,21 @@ window.addEventListener('scroll', () => {
         header?.style.setProperty('background', 'var(--header-bg)');
         header?.style.setProperty('box-shadow', '0 8px 32px 0 rgba(31, 38, 135, 0.1)');
     }
-    
+
     // Hide header on scroll down, show on scroll up
     if (currentScroll > lastScroll && currentScroll > 500) {
         header?.style.setProperty('transform', 'translateY(-100%)');
     } else {
         header?.style.setProperty('transform', 'translateY(0)');
     }
-    
+
     lastScroll = currentScroll;
 });
 
 // ========== ANIMATION ON PAGE LOAD ==========
 window.addEventListener('load', () => {
     document.body.classList.add('loaded');
-    
+
     // Trigger animations
     const elements = document.querySelectorAll('.fade-in');
     elements.forEach((el, index) => {
@@ -589,13 +590,13 @@ document.addEventListener('mousemove', (e) => {
 
 function animateCursor() {
     const speed = 0.2;
-    
+
     cursorX += (mouseX - cursorX) * speed;
     cursorY += (mouseY - cursorY) * speed;
-    
+
     cursor.style.left = cursorX + 'px';
     cursor.style.top = cursorY + 'px';
-    
+
     requestAnimationFrame(animateCursor);
 }
 
@@ -607,7 +608,7 @@ clickables.forEach(el => {
     el.addEventListener('mouseenter', () => {
         cursor.style.transform = 'scale(2)';
     });
-    
+
     el.addEventListener('mouseleave', () => {
         cursor.style.transform = 'scale(1)';
     });
@@ -623,7 +624,7 @@ const countUp = (el) => {
     const duration = 2000;
     const increment = target / (duration / 16);
     let current = 0;
-    
+
     const updateCounter = () => {
         current += increment;
         if (current < target) {
@@ -633,7 +634,7 @@ const countUp = (el) => {
             el.textContent = target;
         }
     };
-    
+
     updateCounter();
 };
 
@@ -769,7 +770,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-/**Chat Popup**/ 
+/**Chat Popup**/
 document.addEventListener("DOMContentLoaded", function () {
 
     const chatWidget = document.querySelector(".chat-widget");
@@ -898,47 +899,47 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 // Facilities//
-    const bannerContent = document.querySelector(".banner-content");
+const bannerContent = document.querySelector(".banner-content");
 
 const services = document.querySelectorAll(".service-card");
 
 function animateOnScroll() {
-  const triggerBottom = window.innerHeight - 100;
+    const triggerBottom = window.innerHeight - 100;
 
-  services.forEach(card => {
-    const rect = card.getBoundingClientRect();
+    services.forEach(card => {
+        const rect = card.getBoundingClientRect();
 
-    if (rect.top < triggerBottom && rect.bottom > 0) {
-      card.classList.add("fade-in-down");
-    } else {
-      card.classList.remove("fade-in-down");
-    }
-  });
+        if (rect.top < triggerBottom && rect.bottom > 0) {
+            card.classList.add("fade-in-down");
+        } else {
+            card.classList.remove("fade-in-down");
+        }
+    });
 }
 
 window.addEventListener("scroll", animateOnScroll);
 animateOnScroll();
 function animateOnScroll() {
-  const triggerBottom = window.innerHeight - 100;
+    const triggerBottom = window.innerHeight - 100;
 
-  /* ===== BANNER ===== */
-  const bannerRect = bannerContent.getBoundingClientRect();
-  if (bannerRect.top < triggerBottom) {
-    bannerContent.classList.add("fade-in-left");
-  } else {
-    bannerContent.classList.remove("fade-in-left");
-  }
-
-  /* ===== SERVICES ===== */
-  services.forEach(card => {
-    const rect = card.getBoundingClientRect();
-
-    if (rect.top < triggerBottom && rect.bottom > 0) {
-      card.classList.add("fade-in-down");
+    /* ===== BANNER ===== */
+    const bannerRect = bannerContent.getBoundingClientRect();
+    if (bannerRect.top < triggerBottom) {
+        bannerContent.classList.add("fade-in-left");
     } else {
-      card.classList.remove("fade-in-down");
+        bannerContent.classList.remove("fade-in-left");
     }
-  });
+
+    /* ===== SERVICES ===== */
+    services.forEach(card => {
+        const rect = card.getBoundingClientRect();
+
+        if (rect.top < triggerBottom && rect.bottom > 0) {
+            card.classList.add("fade-in-down");
+        } else {
+            card.classList.remove("fade-in-down");
+        }
+    });
 }
 
 
@@ -955,7 +956,7 @@ tsParticles.load("particles-bg", {
 
         opacity: { value: 0.4 },
 
-        size: { 
+        size: {
             value: 2   // 👈 small dots
         },
 
@@ -1007,97 +1008,97 @@ document.querySelectorAll('.play-btn').forEach(button => {
 
 document.addEventListener("DOMContentLoaded", function () {
 
-  function loadDarkParticles() {
+    function loadDarkParticles() {
 
-    // Destroy existing particles if any
-    if (window.pJSDom && window.pJSDom.length) {
-      window.pJSDom[0].pJS.fn.vendors.destroypJS();
-      window.pJSDom = [];
+        // Destroy existing particles if any
+        if (window.pJSDom && window.pJSDom.length) {
+            window.pJSDom[0].pJS.fn.vendors.destroypJS();
+            window.pJSDom = [];
+        }
+
+        particlesJS("particles-js", {
+            particles: {
+                number: {
+                    value: 90,
+                    density: {
+                        enable: true,
+                        value_area: 1000
+                    }
+                },
+                color: {
+                    value: "#ffffff"   // Bright white for dark mode
+                },
+                shape: {
+                    type: "circle"
+                },
+                opacity: {
+                    value: 0.7,
+                    random: true
+                },
+                size: {
+                    value: 4,
+                    random: true
+                },
+                line_linked: {
+                    enable: true,
+                    distance: 150,
+                    color: "#ffffff",
+                    opacity: 0.5,
+                    width: 1
+                },
+                move: {
+                    enable: true,
+                    speed: 1.8,        // slower = premium look
+                    direction: "none",
+                    random: false,
+                    straight: false,
+                    out_mode: "out",
+                    bounce: false
+                }
+            },
+            interactivity: {
+                detect_on: "canvas",
+                events: {
+                    onhover: {
+                        enable: true,
+                        mode: "repulse"
+                    },
+                    onclick: {
+                        enable: true,
+                        mode: "push"
+                    },
+                    resize: true
+                },
+                modes: {
+                    repulse: {
+                        distance: 120,
+                        duration: 0.4
+                    },
+                    push: {
+                        particles_nb: 4
+                    }
+                }
+            },
+            retina_detect: true
+        });
     }
 
-    particlesJS("particles-js", {
-      particles: {
-        number: {
-          value: 90,
-          density: {
-            enable: true,
-            value_area: 1000
-          }
-        },
-        color: {
-          value: "#ffffff"   // Bright white for dark mode
-        },
-        shape: {
-          type: "circle"
-        },
-        opacity: {
-          value: 0.7,
-          random: true
-        },
-        size: {
-          value: 4,
-          random: true
-        },
-        line_linked: {
-          enable: true,
-          distance: 150,
-          color: "#ffffff",
-          opacity: 0.5,
-          width: 1
-        },
-        move: {
-          enable: true,
-          speed: 1.8,        // slower = premium look
-          direction: "none",
-          random: false,
-          straight: false,
-          out_mode: "out",
-          bounce: false
-        }
-      },
-      interactivity: {
-        detect_on: "canvas",
-        events: {
-          onhover: {
-            enable: true,
-            mode: "repulse"
-          },
-          onclick: {
-            enable: true,
-            mode: "push"
-          },
-          resize: true
-        },
-        modes: {
-          repulse: {
-            distance: 120,
-            duration: 0.4
-          },
-          push: {
-            particles_nb: 4
-          }
-        }
-      },
-      retina_detect: true
-    });
-  }
+    // Run only if dark mode is active
+    if (document.body.getAttribute("data-theme") === "dark") {
+        loadDarkParticles();
+    }
 
-  // Run only if dark mode is active
-  if (document.body.getAttribute("data-theme") === "dark") {
-    loadDarkParticles();
-  }
-
-  // Reload when theme toggles
-  const toggle = document.getElementById("themeToggle");
-  if (toggle) {
-    toggle.addEventListener("click", function () {
-      setTimeout(function () {
-        if (document.body.getAttribute("data-theme") === "dark") {
-          loadDarkParticles();
-        }
-      }, 100);
-    });
-  }
+    // Reload when theme toggles
+    const toggle = document.getElementById("themeToggle");
+    if (toggle) {
+        toggle.addEventListener("click", function () {
+            setTimeout(function () {
+                if (document.body.getAttribute("data-theme") === "dark") {
+                    loadDarkParticles();
+                }
+            }, 100);
+        });
+    }
 
 });
 

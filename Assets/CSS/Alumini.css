@@ -8,7 +8,7 @@
     --bg-color: #f3f4f6;
     --card-bg: rgba(255, 255, 255, 0.7);
     --header-bg: rgba(255, 255, 255, 0.1);
-    --hero-text-color: #93aae9;
+   --hero-text-color: #93aae9;
 
     /* Fonts */
     --font-primary: "SN Pro", sans-serif;
@@ -26,7 +26,7 @@
     --bg-color: black;
     --card-bg: rgba(31, 41, 55, 0.7);
     --header-bg: rgba(17, 23, 39, 0.1);
-    --hero-text-color: #60a5fa;
+      --hero-text-color: #60a5fa;
 }
 
 /* Skip Content */
@@ -223,7 +223,7 @@ body:not([data-theme]) .moon-icon {
 /* ========== PAGE HERO ========== */
 .page-hero {
     position: relative;
-    height: 400px;
+    height: 600px;
     margin-top: 40px;
     overflow: hidden;
 }
@@ -245,7 +245,7 @@ body:not([data-theme]) .moon-icon {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: var(--hero-text-color);
 }
 
 .hero-overlay h1 {

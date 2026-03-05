@@ -8,7 +8,7 @@
     --bg-color: #f3f4f6;
     --card-bg: rgba(255, 255, 255, 0.7);
     --header-bg: rgba(255, 255, 255, 0.1);
-   --hero-text-color: #93aae9;
+    --hero-text-color: #93aae9;
 
     /* Fonts */
     --font-primary: "SN Pro", sans-serif;
@@ -26,7 +26,7 @@
     --bg-color: black;
     --card-bg: rgba(31, 41, 55, 0.7);
     --header-bg: rgba(17, 23, 39, 0.1);
-      --hero-text-color: #60a5fa;
+    --hero-text-color: #60a5fa;
 }
 
 /* Skip Content */
@@ -293,15 +293,109 @@ body:not([data-theme]) .moon-icon {
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-radius: 15px;
-    padding: 2rem;
+    padding: 2.5rem;
     text-align: center;
     transition: var(--transition);
     border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
+.alumni-card h3 {
+    font-size: 1.6rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.alumni-card p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: var(--text-color);
+}
+
+.card-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    border-radius: 50%;
+    font-size: 2.5rem;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.card-icon:hover {
+    animation: rotateIcon 0.6s ease-in-out;
+}
+
 .alumni-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 15px 40px 0 rgba(31, 38, 135, 0.2);
+}
+
+/* informational heading and list */
+.info-section h3 {
+    display: flex;
+    align-items: center;
+    font-size: 1.6rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+/* highlighted top-level h3 within info-section */
+.info-section h3.highlight-heading {
+    display: block;
+    /* remove flex so text can wrap */
+    color: var(--accent-color) !important;
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+}
+
+.info-list {
+    list-style-type: disc;
+    margin-left: 1.5rem;
+    line-height: 1.8;
+    color: var(--text-color);
+}
+
+/* topic-section heading & icon */
+.topic-section h4 {
+    font-size: 1.8rem;
+    /* larger than normal list text */
+    color: var(--primary-color);
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.topic-icon {
+    font-size: 1.4rem;
+    color: var(--primary-color);
+}
+
+/* highlighted main section headings */
+.highlight-heading {
+    color: var(--accent-color);
+    /* orange hover color */
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 2.2rem;
+}
+
+/* nested bullet list for supporting points */
+.sub-list {
+    list-style-type: circle;
+    margin-left: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+.sub-list li {
+    margin-bottom: 0.25rem;
 }
 
 /* ========== ANIMATIONS ========== */
@@ -320,6 +414,20 @@ body:not([data-theme]) .moon-icon {
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+@keyframes rotateIcon {
+    0% {
+        transform: rotateY(0deg);
+    }
+
+    50% {
+        transform: rotateY(180deg);
+    }
+
+    100% {
+        transform: rotateY(360deg);
     }
 }
 
